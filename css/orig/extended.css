@@ -1,0 +1,63 @@
+/*
+ *  Własne style dla strony - szablon EXTENDED
+ */
+
+div.categories-nav { border-bottom: 1px solid #ccc; }
+ul.categories { margin: 0px; padding: 1em; display: inline-flex; }
+ul.categories > li { display: inline-flex; }
+ul.categories > li:hover { color: #c00; }
+ul.categories > li.category-selected { text-decoration: underline; }
+ul.categories > li.category-selected > a { color: #c00; }
+
+section.content { min-height: calc(100vh - 236px); }
+
+div.article { margin-top: 2em; }
+div.article > div.article-title { padding: 0px 0px 0px 10px; color: #555; }
+div.article > div.article-timestamp { font-size: 0.8em; font-weight: bold; color: #666; padding-bottom: 10px; border-bottom: 1px dotted #aaa; }
+div.article > div.article-timestamp > img { padding: 0px 10px 0px 10px; margin: 10px 0px 10px 0px; }
+div.article > div.article-skip { padding: 5px 10px 25px 10px; border-bottom: 1px dotted #aaa; font-size: 0.9em; }
+div.article > div.article-skip > span.skip-left { float: left; }
+div.article > div.article-skip > span.skip-right { float: right; }
+div.article > div.article-content { color: #555; padding: 10px; }
+div.article > div.article-content > p > img { padding: 10px 0px 10px 0px; }
+div.article > div.article-content > pre { color: #0a0; }
+div.article > div.article-continue { margin-right: 10px; text-align: right; font-size: 0.9em; }
+div.article > div.article-continue > a { color: #a00; }
+div.article-comment { padding: 20px 10px 0 10px; margin: 20px 10px 0 10px; border-top: 1px dotted #ccc; }
+div.article-comments-title { padding: 20px 10px 0 10px; margin: 20px 10px 0 10px; border-top: 1px dotted #ccc; color: #999; font-size: 1.15em; text-align: center; }
+div.article-comments-list { padding: 20px 10px 0 10px; margin: 20px 10px 0 10px; border-top: 1px dotted #ccc; color: #666; }
+div.article-comments-header { font-size: 0.75em; }
+div.article-comments-header > img { padding: 0px 10px 0px 10px; margin: 10px 0px 10px 0px; }
+div.article-comments-content > p { font-size: 0.95em; font-style: italic; padding: 0 10px; }
+div.article-comments-info { padding: 20px 10px 0 10px; margin: 20px 10px 0 10px; border-top: 1px dotted #ccc; color: #666; font-size: 0.85em; text-align: center; }
+
+span.distance { margin: 15px; }
+
+p.sup { border-top: 1px solid #ddd; font-size: 0.8em; padding-top: 10px; }
+
+/* articles pagination (JS based): */
+
+div#pageNavPosition {
+	text-align: center;
+	color: #ccc;
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	border-top: 1px dotted #999;
+}
+div#pageNavPosition > span {
+	color: #666;
+	font-size: small;
+	padding: 5px;
+}
+.pg-normal {
+	color: #666;
+	font-weight: normal;
+	text-decoration: none;    
+	cursor: pointer;    
+}
+.pg-selected {
+	color: #369;
+	font-weight: bold;        
+	text-decoration: underline;
+	cursor: pointer;
+}

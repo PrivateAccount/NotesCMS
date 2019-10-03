@@ -1,0 +1,38 @@
+/*
+ *  Własne style dla strony - szablon ADMIN
+ */
+
+div.page-content { min-height: calc(100vh - 127px); }
+
+div.AdminGroupName { padding-top: 30px; margin: 10px; text-align: center; color: #999; }
+div.AdminGroupElements { padding: 0px 0px 0px 0px; }
+td.AdminGroupElement { width: 150px; padding: 10px; text-align: center; vertical-align: top; }
+td.AdminGroupElement > a > p { margin: 0px; padding: 0px; font-size: small; }
+td.AdminGroupElement > a { color: #777; }
+td.AdminGroupElement > a:hover  { color: #c00; text-decoration: none; }
+
+div.message-bar { margin: 2em 0; }
+
+td.ViewKey { color: #777; padding-right: 10px; width: 20%; border-bottom: 1px dotted #eee; }
+td.ViewData { color: #333; padding-left: 10px; width: 80%; border-bottom: 1px dotted #eee; }
+
+img.ListImage { width: 70px; height: 50px; padding: 1px; border: 1px solid #ddd; }
+span.gallery_item > a > img { margin: 5px; padding: 1px; border: 1px solid #ccc; width: 100px; height: 100px; }
+span.gallery_item > a > img:hover { cursor: pointer; border: 1px solid #00f; }
+
+div.options-links { margin: 2em 0; }
+span.options-item { float: right; padding: 0px 10px; margin: 0px 0px 20px 0px; }
+span.options-item > a > img { padding: 0px 10px 0px 0px; }
+
+div.radio > label > a { margin-left: 20px; }
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #aaa;
+}
+
+table.table-bordered th.TitleCell {
+    padding: 5px 10px;
+    background-color: #eee;
+}
+
+section.admin { min-height: calc(100vh - 312px); }

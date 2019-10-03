@@ -1,0 +1,135 @@
+/*
+ *  Własne style dla strony - szablon DEFAULT
+ */
+
+body { margin: 0px; padding: 0px; color: #666; background-color: #FAFAFA; }
+a { text-decoration: none; color: #369; }
+a:hover { text-decoration: underline; color: #c00; }
+th { text-align: center; padding: 10px 3px 10px 3px; font-size: medium; }
+
+div.center { float: none; margin-left: auto; margin-right: auto; }
+
+a.logo { text-decoration: none; }
+a.logo:hover { text-decoration: none; }
+a.logo > span.company { padding-left: 20px; padding-right: 10px; font: italic bold 55px/55px Georgia, serif; vertical-align: middle; color: #d00; text-shadow: 4px 4px 6px #999; }
+
+div.page-header { margin: 0px; padding: 25px 0px; background-color: #e9ecef; border-top: 1px solid #fff; border-bottom: 1px solid #ccc; }
+div.page-path { background-color: #f6f6f6; border-bottom: 1px solid #ccc; border-top: 1px solid #fff; }
+
+div.page-content { background-color: #fff9f0; margin: 0px; padding: 20px 20px 0px 20px; border-top: 1px solid #fff; border-bottom: 1px solid #ccc; }
+div.page-footer { width: 100%; text-align: center; padding: 10px; border-top: 1px solid #fff; border-bottom: 1px solid #ccc; color: #999; background-color: #eee; font-size: 0.8em; }
+div.page-footer > div.FooterCopyright { padding-top: 5px; }
+div.page-footer > div.FooterCopyright > a { color: #999; }
+div.page-footer > a { margin: 10px; }
+
+div.page-header > header > nav.navbar > div.container > div.navbar-header > a.navbar-brand > span > img { margin: -7px 20px 0px 0px; }
+div.page-header > header > nav.navbar > div.container > div.navbar-collapse > ul.nav { margin: 0px 0px 0px 20px; }
+div.page-header > header > nav.navbar > div.container > div.navbar-collapse > ul.nav > li > a.navbar-link > img { margin: 0px 10px 0px 0px; }
+
+div.page-navigation { height: 50px; }
+
+div.page-path > ol.breadcrumb { padding: 20px 10px 0px 30px; }
+div.page-path > div.navbar-text.navbar-right { padding: 5px 15px 5px 2px; }
+
+div.card { border: 1px solid #aaa; }
+div.card-heading { padding: 20px 0px 10px 20px; background-color: #f5f5f5; border-bottom: 1px solid #ccc; }
+div.card-heading > h3.card-title { font-weight: bold; color: #e0500a; }
+div.card-footer > button { margin: 10px; width: 100px; }
+
+nav.navbar.navbar-default { position: fixed; left: 0px; right: 0px; z-index: 1000; margin: 0px; border-top: 1px solid #fff; border-bottom: 1px solid #ccc; border-radius: 0; }
+
+span.FormIcon { padding: 0 20px 0 10px; }
+span.FormTitle { padding: 0px; margin: 0px; font-size: large; font-weight: bold; color: #c40; }
+tr.HeaderRow { background-color: #f0f0f0; }
+
+table.table-bordered td, table.table-bordered th { border: 1px solid #999; }
+table.table-bordered th.TitleCell {  }
+table.table-bordered td.TableHeadingBar { background: lightyellow; }
+table.table-bordered td.TableHeadingBar h3 { color: #bb1616; }
+table.table-bordered td.TableControlBar { background: aliceblue; }
+
+span.FormSearch { text-align: right; margin: 0px; padding: 0px; }
+span.FormSearch > form.navbar-form { float: right; margin: 0px; }
+td.FormSearchBar { text-align: center; }
+span.FormSearchCaption { color: #999; }
+span.FormSearchValue { color: #c00; }
+span.FormSearchClose > img { vertical-align: middle; margin-left: 10px; }
+span.FormSearchClose > img:hover { cursor: pointer; }
+span.FormDates { text-align: right; margin: 0px; padding: 0px; }
+span.FormDates > form.navbar-form { float: right; margin: 0px; }
+
+a.PagePointer { }
+a.PagePointerCurrent { }
+a.PagePointerDisabled { }
+a.PagePointer:hover { }
+a.PagePointerCurrent:hover { }
+a.PagePointerDisabled:hover { }
+form.FormGoToPage { float: left; }
+form.FormShowRows { float: right; }
+
+div#goto-container { padding: 0px; }
+div#goto-page { width: 100px; }
+input#page-number { text-align: center; }
+select#page_rows { width: 80px; }
+
+nav.navbar ul.nav li.nav-item a.nav-link { color: #090; }
+nav.navbar ul.nav li.nav-item a.nav-link:hover { color: #c00; }
+nav.navbar ul.nav li.nav-selected a.nav-link { color: #c00; border-bottom: 3px solid #c00; margin-bottom: -3px; }
+
+section.content { min-height: calc(100vh - 236px); }
+
+tr.DataRowBright { background-color: #fff; }
+tr.DataRowDark { background-color: #f6f6f6; }
+tr.DataRowBright > td { color: #666; padding: 2px 8px !important; font-size: 0.87em; vertical-align: middle !important; }
+tr.DataRowDark > td { color: #666; padding: 2px 8px !important; font-size: 0.87em; vertical-align: middle !important; }
+td.DataCell { color: #666 !important; padding: 2px 8px !important; font-size: 0.87em; }
+td.DataLock { color: #d00 !important; padding: 2px 8px !important; font-size: 0.87em; }
+td.DataPoint { color: #090 !important; padding: 2px 8px !important; font-size: 0.87em; }
+td.DataFound { color: #36c !important; padding: 2px 8px !important; font-size: 0.87em; }
+td.DataCellMsg { color: #c00; text-align: center; font-weight: bold; font-size: 0.87em; }
+td.PaginatorCell { color: #090; text-align: center; font-size: 0.87em; }
+td.PaginatorCell div.container div.row div.counters { padding: 18px 0 0 0; }
+td.PaginatorCell div.container div.row div.pages { padding: 10px 0 0 0; }
+td.PaginatorCell div.container div.row div.band { padding: 10px 0 0 0; }
+td.PaginatorCell div.container div.row div.skip { padding: 8px 0 0 40px; }
+td.PaginatorCell a.PagePointer span { font-weight: bold; }
+td.ActionCell { }
+td.ActionCell > a { }
+td.ActionCell > a > img.ActionIcon { margin: 5px; }
+
+td.MsgIcon { padding: 0px 10px 0px 0px; vertical-align: middle; }
+td.MsgMessage { padding: 0px 5px 0px 10px; vertical-align: middle; font-size: small; }
+td.MsgButtons { padding: 0px 4px 0px 4px; }
+
+div.GroupName { font-size: small; text-align: center; color: #ccc; margin: 10px; border-bottom: 1px dotted #ddd; }
+div.GroupElements { text-align: center; }
+td.GroupElement { padding: 10px 0px 10px 0px; margin: 10px; width: 300px; }
+td.GroupElement > a > p { margin: 0px; padding: 0px; font-size: small; }
+td.GroupElement > a { color: #777; }
+td.GroupElement > a:hover  { color: #c00; text-decoration: none; }
+
+td.ViewKey { color: #777; padding-right: 10px; width: 25%; border-bottom: 1px dotted #eee; font-size: small; vertical-align: top; }
+td.ViewData { color: #555; padding-left: 10px; width: 75%; border-bottom: 1px dotted #eee; font-size: small; }
+
+tr.install > td > p { line-height: 20px; margin: 10px; }
+tr.install > td > ol > li { line-height: 20px; margin: 10px; }
+
+img.ListImage { width: 70px; height: 50px; padding: 1px; border: 1px solid #ddd; }
+span.gallery_item > a > img { margin: 5px; padding: 1px; border: 1px solid #ccc; width: 100px; height: 100px; }
+span.gallery_item > a > img:hover { cursor: pointer; border: 1px solid #00f; }
+
+p.warning { color: red; }
+
+div.action-bar { text-align: center; }
+
+input[type="checkbox"], input[type="radio"] { margin-right: 1em; }
+input[type="date"].form-control { padding: 0 12px; width: 170px; }
+textarea.form-control { min-width: 100%; max-width: 100%; min-height: 100px; }
+
+form { color: #666; }
+form label { color: #c30; }
+input.form-control, textarea.form-control, select.form-control { border: 1px solid #aaa; }
+
+nav.bg-grey, footer.bg-grey { background-color: #ddd; }
+nav.navbar a.navbar-brand { color: #369; }
+nav.navbar a.navbar-brand:hover { color: #c00; }
