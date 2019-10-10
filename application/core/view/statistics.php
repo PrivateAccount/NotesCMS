@@ -139,7 +139,7 @@ class Statistics_View extends View
 			array(
 				'caption' => NULL, 
 				'data' => array(
-					'type' => 'canvas', 'id' => 'chart', 'name' => 'chart', 'width' => '320px', 'height' => '100px',
+					'type' => 'canvas', 'id' => 'chart', 'name' => 'chart', 'width' => '250px', 'height' => '100px',
 					),
 				),
 			array(
