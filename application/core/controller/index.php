@@ -17,11 +17,11 @@ class Index_Controller extends Controller
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowPage($data));
 
-		$layout = $this->app->get_settings()->get_config_key('page_template_extended');
+		$layout = $this->app->get_settings()->get_config_key('page_template_index');
 
 		$this->app->get_page()->set_layout($layout);
 		
-		$this->app->get_page()->set_template('index');
+		$this->app->get_page()->set_template($layout);
 	}
 }
 

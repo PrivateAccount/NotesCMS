@@ -40,7 +40,7 @@ class Page
 		include LIB_DIR . 'message.php';
 		include LIB_DIR . 'dialog.php';
 
-		$available_layouts = array('default', 'extended', 'advanced', 'admin', 'simple', 'custom');
+		$available_layouts = array('index', 'default', 'extended', 'advanced', 'admin', 'simple', 'custom');
 
 		$this->layout = $this->app->get_settings()->get_config_key('page_template_default');
 

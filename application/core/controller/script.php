@@ -25,7 +25,7 @@ class Script_Controller extends Controller
 		{
 			parent::Edit_Action();
 
-			$mode = isset($_GET['mode']) ? $_GET['mode'] : (isset($_SESSION['template_mode']) ? $_SESSION['template_mode'] : 1);
+			$mode = isset($_GET['mode']) ? $_GET['mode'] : (isset($_SESSION['template_mode']) ? $_SESSION['template_mode'] : 0);
 
 			$_SESSION['template_mode'] = $mode;
 
@@ -38,7 +38,7 @@ class Script_Controller extends Controller
 				case 3: 
 					$layout_name = 'page_template_admin'; break;
 				default: 
-					$layout_name = 'page_template_default'; break;
+					$layout_name = 'page_template_index'; break;
 			}
 
 			$layout = $this->app->get_settings()->get_config_key($layout_name);
@@ -81,6 +81,11 @@ class Script_Controller extends Controller
 			else // wczytany formularz
 			{
 				$options = array(
+					array(
+						'link' => 'index.php?route='.MODULE_NAME.'&mode=0',
+						'caption' => 'Index',
+						'icon' => 'img/home.png',
+						),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 						'caption' => 'Domyślny',
@@ -134,7 +139,7 @@ class Script_Controller extends Controller
 				case 3: 
 					$layout_name = 'page_template_admin'; break;
 				default: 
-					$layout_name = 'page_template_default'; break;
+					$layout_name = 'page_template_index'; break;
 			}
 
 			$layout = $this->app->get_settings()->get_config_key($layout_name);
