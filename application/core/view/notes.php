@@ -150,13 +150,13 @@ class Notes_View extends View
 		
 		$view_buttons = array(
 			array(
-				'type' => 'skip', 'id' => 'prev_button', 'name' => 'prev_button', 'value' => '<i class=\'fas fa-backward\'></i>', 'onclick' => '$(\'form#'.$view_id.'\').attr(\'action\', \''.$view_action.'&action=view&id='.strval($data['id'] - 1).'\');',
+				'type' => 'skip', 'id' => 'prev_button', 'name' => 'prev_button', 'value' => '<i class=\'fas fa-backward\'></i>', 'onclick' => '$(\'form#'.$view_id.'\').attr(\'action\', \''.$view_action.'&action=view&direction=prev&id='.$data['id'].'\');',
 				),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
 				),
 			array(
-				'type' => 'skip', 'id' => 'next_button', 'name' => 'next_button', 'value' => '<i class=\'fas fa-forward\'></i>', 'onclick' => '$(\'form#'.$view_id.'\').attr(\'action\', \''.$view_action.'&action=view&id='.strval($data['id'] + 1).'\');',
+				'type' => 'skip', 'id' => 'next_button', 'name' => 'next_button', 'value' => '<i class=\'fas fa-forward\'></i>', 'onclick' => '$(\'form#'.$view_id.'\').attr(\'action\', \''.$view_action.'&action=view&direction=next&id='.$data['id'].'\');',
 				),
 			);
 		

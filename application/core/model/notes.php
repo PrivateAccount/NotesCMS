@@ -76,6 +76,70 @@ class Notes_Model extends Model
 		return $this->row_item;
 	}
 
+	public function GetPrevId($id)
+	{
+		$result = 0;
+		$this->row_item = array();
+		
+		$author_id = $_SESSION['user_id'];
+
+		try
+		{
+			$query =	'SELECT ' . $this->table_name . '.id FROM ' . $this->table_name .
+						' INNER JOIN users ON users.id = ' . $this->table_name . '.author_id' .
+						' WHERE author_id = :author_id AND ' . $this->table_name . '.id < :id' .
+						' ORDER BY id DESC LIMIT 1';
+
+			$statement = $this->db->prepare($query);
+			
+			$statement->bindValue(':author_id', $author_id, PDO::PARAM_INT); 
+			$statement->bindValue(':id', $id, PDO::PARAM_INT); 
+
+			$statement->execute();
+			
+			$this->row_item = $statement->fetch(PDO::FETCH_ASSOC);
+			$result = intval($this->row_item['id']);
+		}
+		catch (PDOException $e)
+		{
+			die ($e->getMessage());
+		}
+
+		return $result;
+	}
+
+	public function GetNextId($id)
+	{
+		$result = 0;
+		$this->row_item = array();
+		
+		$author_id = $_SESSION['user_id'];
+
+		try
+		{
+			$query =	'SELECT ' . $this->table_name . '.id FROM ' . $this->table_name .
+						' INNER JOIN users ON users.id = ' . $this->table_name . '.author_id' .
+						' WHERE author_id = :author_id AND ' . $this->table_name . '.id > :id' .
+						' ORDER BY id ASC LIMIT 1';
+
+			$statement = $this->db->prepare($query);
+			
+			$statement->bindValue(':author_id', $author_id, PDO::PARAM_INT); 
+			$statement->bindValue(':id', $id, PDO::PARAM_INT); 
+
+			$statement->execute();
+			
+			$this->row_item = $statement->fetch(PDO::FETCH_ASSOC);
+			$result = intval($this->row_item['id']);
+		}
+		catch (PDOException $e)
+		{
+			die ($e->getMessage());
+		}
+
+		return $result;
+	}
+
 	public function Add($record)
 	{
 		$inserted_id = 0;

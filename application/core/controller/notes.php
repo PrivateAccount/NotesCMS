@@ -236,6 +236,7 @@ class Notes_Controller extends Controller
 			parent::View_Action();
 
 			$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+			$direction = isset($_GET['direction']) ? $_GET['direction'] : NULL;
 			
 			if (isset($_POST['cancel_button']))
 			{
@@ -244,6 +245,18 @@ class Notes_Controller extends Controller
 			}
 			else // wczytany formularz
 			{
+				switch ($direction)
+				{
+					case 'prev':
+						$id = $this->app->get_model_object()->GetPrevId($id);
+						break;
+					case 'next':
+						$id = $this->app->get_model_object()->GetNextId($id);
+						break;
+					default:
+						break;
+				}
+				
 				$options = array(
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
