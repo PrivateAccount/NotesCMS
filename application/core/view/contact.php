@@ -52,8 +52,12 @@ class Contact_View extends View
 
 		$form_object->set_inputs($form_inputs);
 		
-		$form_hiddens = array();
-			
+		$form_hiddens = array(
+			array(
+				'type' => 'hidden', 'id' => 'robot', 'name' => 'robot', 'value' => NULL,
+				),
+			);
+		
 		$form_object->set_hiddens($form_hiddens);
 
 		$form_buttons = array(

@@ -13,14 +13,14 @@ class Messages_Controller extends Controller
 			));	
 		
 		$columns = array(
-			array('db_name' => 'id',              'column_name' => 'Id',                'sorting' => 1),
-			array('db_name' => 'client_ip',       'column_name' => 'Adres IP',          'sorting' => 1),
-			array('db_name' => 'client_name',     'column_name' => 'Nazwa użytkownika', 'sorting' => 1),
-			array('db_name' => 'client_email',    'column_name' => 'Adres e-mail',      'sorting' => 1),
-			array('db_name' => 'message_content', 'column_name' => 'Treść wiadomości',  'sorting' => 1),
-			array('db_name' => 'requested',       'column_name' => 'Wysłana',           'sorting' => 1),
-			array('db_name' => 'send_date',       'column_name' => 'Wysłano',           'sorting' => 1),
-			array('db_name' => 'close_date',      'column_name' => 'Zatwierdzono',      'sorting' => 1),
+			array('db_name' => 'id',              'column_name' => 'Id',               'sorting' => 1),
+			array('db_name' => 'client_ip',       'column_name' => 'Adres IP',         'sorting' => 1),
+			array('db_name' => 'client_name',     'column_name' => 'Imię',             'sorting' => 1),
+			array('db_name' => 'client_email',    'column_name' => 'Adres e-mail',     'sorting' => 1),
+			array('db_name' => 'message_content', 'column_name' => 'Treść wiadomości', 'sorting' => 1),
+			array('db_name' => 'requested',       'column_name' => 'Wysłana',          'sorting' => 1),
+			array('db_name' => 'send_date',       'column_name' => 'Wysłano',          'sorting' => 1),
+			array('db_name' => 'close_date',      'column_name' => 'Przyjęto',         'sorting' => 1),
 		);
 
 		parent::init($columns);

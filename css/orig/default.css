@@ -7,6 +7,9 @@ a { text-decoration: none; color: #369; }
 a:hover { text-decoration: underline; color: #c00; }
 th { text-align: center; padding: 10px 3px 10px 3px; font-size: medium; }
 
+body { margin-top: 56px; }
+body > nav.navbar.static-top { position: fixed; left: 0; top: 0; width: 100%; padding: 10px 0; z-index: 10; }
+
 div.center { float: none; margin-left: auto; margin-right: auto; }
 
 a.logo { text-decoration: none; }
@@ -76,7 +79,7 @@ nav.navbar ul.nav li.nav-item a.nav-link { color: #090; }
 nav.navbar ul.nav li.nav-item a.nav-link:hover { color: #c00; }
 nav.navbar ul.nav li.nav-selected a.nav-link { color: #c00; border-bottom: 3px solid #c00; margin-bottom: -3px; }
 
-section.content { min-height: calc(100vh - 236px); }
+section.content { min-height: calc(100vh - 275px); }
 
 tr.DataRowBright { background-color: #fff; }
 tr.DataRowDark { background-color: #f6f6f6; }

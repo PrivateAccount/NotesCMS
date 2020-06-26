@@ -239,7 +239,7 @@ class Pages_View extends View
 
 		$form_title = 'Archiwa strony';
 		$form_image = 'far fa-folder-open';
-		$form_width = '300px';
+		$form_width = '340px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 

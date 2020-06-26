@@ -9,7 +9,7 @@ ul.categories > li:hover { color: #c00; }
 ul.categories > li.category-selected { text-decoration: underline; }
 ul.categories > li.category-selected > a { color: #c00; }
 
-section.content { min-height: calc(100vh - 236px); }
+section.content { min-height: calc(100vh - 275px); }
 
 div.article { margin-top: 2em; }
 div.article > div.article-title { padding: 0px 0px 0px 10px; color: #555; }

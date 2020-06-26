@@ -81,6 +81,8 @@ class Contact_Model extends Model
 	{
 		if (!parent::check_required($record)) return NULL;
 
+		if ($record['robot'] != NULL) return NULL; // anti-robots protection
+
 		$login = $record['login'];
 		$email = $record['email'];
 		$contents = strip_tags($record['contents']);
