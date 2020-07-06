@@ -9,7 +9,7 @@ define ('LIB_DIR', 'application/lib/');                 // application library d
 define ('CLASS_DIR', 'application/classes/');           // classes directory
 define ('GENER_DIR', 'application/lib/generators/');    // generators library directory
 define ('ABSTR_DIR', 'application/classes/abstract/');  // abstract classes directory
-define ('TEMPL_DIR', 'templates/');                     // page templates directory
+define ('TEMPL_DIR', 'application/templates/');         // page templates directory
 define ('GALLERY_DIR', 'gallery/');                     // gallery directory
 define ('IMG_DIR', 'images/');                          // images directory
 define ('DOC_DIR', 'docs/');                            // documents directory

@@ -111,7 +111,7 @@ class Dialog
 		$main_dialog_body .= '</script>';
 
 		$main_dialog_body .= '<style>';
-		$main_dialog_body .= 'div.page-content { padding: 100px 20px 0px 20px; }';
+		$main_dialog_body .= 'section.content > div.container { padding: 165px 0 220px 0; }';
 		$main_dialog_body .= '</style>';
 		
 		return $main_dialog_body;

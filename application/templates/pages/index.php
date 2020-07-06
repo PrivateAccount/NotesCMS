@@ -12,6 +12,7 @@ $main_layout_content = '
   <meta name="keywords" content="'.$this->get_metadata('main_keywords').'" />
   <meta name="description" content="'.$this->get_metadata('main_description').'" />
   <meta name="author" content="'.$this->get_metadata('main_author').'" />
+  <meta name="msvalidate.01" content="7E90215B9E3878445135AAB003052BA2" />
   <title>'.$this->get_metadata('main_title').'</title>
   <base href="'.$this->get_metadata('base_domain').'" target="_self" />
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
