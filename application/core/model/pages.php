@@ -230,7 +230,7 @@ class Pages_Model extends Model
 			$statement = $this->db->prepare($query);
 			
 			$statement->bindValue(':id', $id, PDO::PARAM_INT); 
-			$statement->bindValue(':modified', $modified, PDO::PARAM_INT); 
+			$statement->bindValue(':modified', $modified, PDO::PARAM_STR); 
 
 			$statement->execute();
 			
