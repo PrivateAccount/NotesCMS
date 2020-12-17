@@ -50,6 +50,11 @@ class Messages_Controller extends Controller
 					'icon' => 'img/checked.png',
 					),
 				array(
+					'link' => 'index.php?route='.MODULE_NAME.'&action=clear',
+					'caption' => 'Wyczyść wiadomości',
+					'icon' => 'img/trash.png',
+					),
+				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
@@ -116,6 +121,33 @@ class Messages_Controller extends Controller
 			else
 			{
 				parent::ConfirmDelete($id);
+			}
+		}
+		else // brak uprawnień
+		{
+			parent::AccessDenied();
+		}
+	}
+
+	public function Clear_Action()
+	{
+		if ($this->app->get_acl()->allowed(OPERATOR)) // są uprawnienia
+		{
+			parent::Clear_Action();
+
+			if (isset($_GET['confirm']))
+			{
+				$result = $this->app->get_model_object()->Clear();
+
+				if ($result) $this->app->get_page()->set_message(MSG_INFORMATION, 'Wiadomości zostały pomyślnie usunięte.');
+				else $this->app->get_page()->set_message(MSG_ERROR, 'Wiadomości nie zostały usunięte.');
+
+				header('Location: index.php?route='.MODULE_NAME);
+				exit;
+			}
+			else
+			{
+				parent::ConfirmClear();
 			}
 		}
 		else // brak uprawnień

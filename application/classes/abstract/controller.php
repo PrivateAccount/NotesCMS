@@ -113,6 +113,11 @@ class Controller
 
 	}
 
+	public function Clear_Action()
+	{
+
+	}
+
 	public function ConfirmDelete($id)
 	{
 		$options = array(
@@ -131,6 +136,31 @@ class Controller
 			'Uwaga! Rekord zostanie bezpowrotnie usunięty. <br />Czy na pewno chcesz usunąć rekord?',
 			array(
 				array('link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id.'&confirm=yes', 'caption' => 'Skasuj', 'onclick' => NULL),
+				array('link' => 'index.php?route='.MODULE_NAME, 'caption' => 'Anuluj', 'onclick' => NULL),
+				)
+			);
+
+		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
+	}
+
+	public function ConfirmClear()
+	{
+		$options = array(
+			array(
+				'link' => 'index.php?route='.MODULE_NAME,
+				'caption' => 'Zamknij',
+				'icon' => 'img/stop.png',
+				),
+			);
+
+		$this->app->get_page()->set_options($options);
+
+		$this->app->get_page()->set_dialog(
+			MSG_QUESTION, 
+			'Usuwanie rekordów', 
+			'Uwaga! Rekordy zostaną bezpowrotnie usunięte. <br />Czy na pewno chcesz usunąć rekordy?',
+			array(
+				array('link' => 'index.php?route='.MODULE_NAME.'&action=clear&&confirm=yes', 'caption' => 'Skasuj', 'onclick' => NULL),
 				array('link' => 'index.php?route='.MODULE_NAME, 'caption' => 'Anuluj', 'onclick' => NULL),
 				)
 			);

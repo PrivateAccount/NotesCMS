@@ -120,6 +120,32 @@ class Messages_Model extends Model
 
 		return $affected_rows;
 	}
+
+	public function Clear()
+	{
+		$affected_rows = 0;
+		$requested = 1;
+
+		try
+		{
+			$query =	'DELETE FROM ' . $this->table_name .
+						' WHERE requested = :requested';
+
+			$statement = $this->db->prepare($query);
+
+			$statement->bindValue(':requested', $requested, PDO::PARAM_INT); 
+			
+			$statement->execute();
+			
+			$affected_rows = $statement->rowCount();
+		}
+		catch (PDOException $e)
+		{
+			die ($e->getMessage());
+		}
+
+		return $affected_rows;
+	}
 }
 
 ?>
