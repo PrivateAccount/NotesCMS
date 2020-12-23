@@ -13,11 +13,11 @@ class Messages_View extends View
 		$image = 'fas fa-comment-dots';
 
 		$attribs = array(
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '10%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '10%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '30%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '25%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '0%',  'align' => 'left',   'visible' => '0', 'custom' => TRUE),
 			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
@@ -30,9 +30,9 @@ class Messages_View extends View
 			array('action' => 'delete',  'icon' => 'trash.png',   'title' => 'Usuń'),
 		);
 	
-		include GENER_DIR . 'list.php';
+		include GENER_DIR . 'custom.php';
 
-		$list_object = new ListBuilder();
+		$list_object = new CustomBuilder();
 
 		$list_object->init($title, $image, $columns, $data, $this->get_list_params(), $attribs, $actions);
 
