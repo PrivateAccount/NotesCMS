@@ -110,12 +110,18 @@ class Controller
 
 	public function Delete_Action()
 	{
-
+		if (isset($_GET['confirm']))
+		{
+			$_SESSION['page_pointer'] = 0;
+		}
 	}
 
 	public function Clear_Action()
 	{
-
+		if (isset($_GET['confirm']))
+		{
+			$_SESSION['page_pointer'] = 0;
+		}
 	}
 
 	public function ConfirmDelete($id)
