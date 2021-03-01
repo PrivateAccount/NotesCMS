@@ -28,6 +28,7 @@ class Messages_View extends View
 			array('action' => 'view',    'icon' => 'info.png',    'title' => 'Podgląd'),
 			array('action' => 'confirm', 'icon' => 'checked.png', 'title' => 'Zatwierdź'),
 			array('action' => 'delete',  'icon' => 'trash.png',   'title' => 'Usuń'),
+			array('action' => 'exclude',  'icon' => 'remove.png',   'title' => 'Blokuj'),
 		);
 	
 		include GENER_DIR . 'custom.php';
