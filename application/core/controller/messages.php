@@ -201,6 +201,30 @@ class Messages_Controller extends Controller
 			parent::AccessDenied();
 		}
 	}
+	
+	public function Exclude_Action()
+	{
+		if ($this->app->get_acl()->allowed(OPERATOR)) // są uprawnienia
+		{
+			parent::Exclude_Action();
+
+			$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+			
+			$data = $this->app->get_model_object()->GetOne($id);
+			
+			$result = $this->app->get_model_object()->Exclude($data);
+
+			if ($result) $this->app->get_page()->set_message(MSG_INFORMATION, 'Adres został pomyślnie dopisany do czarnej listy.');
+			else $this->app->get_page()->set_message(MSG_ERROR, 'Adres nie został dopisany do czarnej listy.');
+
+			header('Location: index.php?route='.MODULE_NAME);
+			exit;
+		}
+		else // brak uprawnień
+		{
+			parent::AccessDenied();
+		}
+	}
 }
 
 ?>
