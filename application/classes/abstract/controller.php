@@ -124,6 +124,11 @@ class Controller
 		}
 	}
 
+	public function Exclude_Action()
+	{
+		
+	}
+
 	public function ConfirmDelete($id)
 	{
 		$options = array(
