@@ -146,6 +146,33 @@ class Messages_Model extends Model
 
 		return $affected_rows;
 	}
+
+	public function Exclude($record)
+	{
+		$affected_rows = 0;
+		$key_name = 'black_list_visitors';
+
+		try
+		{
+			$query =  "UPDATE configuration" .
+			          " SET key_value = CONCAT(key_value, ', \'". $record['client_ip'] ."\'')" .
+			          " WHERE key_name = :key_name";
+
+			$statement = $this->db->prepare($query);
+
+			$statement->bindValue(':key_name', $key_name, PDO::PARAM_STR); 
+			
+			$statement->execute();
+			
+			$affected_rows = $statement->rowCount();
+		}
+		catch (PDOException $e)
+		{
+			die ($e->getMessage());
+		}
+
+		return $affected_rows;
+	}
 }
 
 ?>
