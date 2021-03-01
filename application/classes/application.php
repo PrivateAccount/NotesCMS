@@ -61,6 +61,15 @@ class Application
 		$this->set_page($this);
 		$this->set_user($this);
 		$this->set_menu($this);
+		
+		// czarna lista adresów IP:
+		
+		$visitor_ip = $_SERVER['REMOTE_ADDR'];
+		$black_list_visitors = $this->get_settings()->get_config_key('black_list_visitors');
+		$black_list_ip = explode(',', $black_list_visitors);
+		foreach ($black_list_ip AS $black_list_item)
+			if ($visitor_ip == trim(str_replace('\'', '', $black_list_item)))
+				exit();
 	}
 
 	public function stop()
