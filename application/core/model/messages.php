@@ -151,15 +151,18 @@ class Messages_Model extends Model
 	{
 		$affected_rows = 0;
 		$key_name = 'black_list_visitors';
+		$modified = date("Y-m-d H:i:s");
 
 		try
 		{
 			$query =  "UPDATE configuration" .
-			          " SET key_value = CONCAT(key_value, ', \'". $record['client_ip'] ."\'')" .
+			          " SET key_value = CONCAT(key_value, ', \'". $record['client_ip'] ."\'')," .
+			          " modified = :modified" .
 			          " WHERE key_name = :key_name";
 
 			$statement = $this->db->prepare($query);
 
+			$statement->bindValue(':modified', $modified, PDO::PARAM_STR); 
 			$statement->bindValue(':key_name', $key_name, PDO::PARAM_STR); 
 			
 			$statement->execute();
