@@ -32,7 +32,7 @@ $main_layout_content = '
 
   <nav class="navbar navbar-light bg-grey static-top">
     <div class="container">
-      <a class="navbar-brand" href="/">'.$this->get_logo().' &nbsp; '.$this->get_metadata('company_name').'</a>'.$this->get_topbar().'
+      <a class="navbar-brand" href="index.php">'.$this->get_logo().' &nbsp; '.$this->get_metadata('company_name').'</a>'.$this->get_topbar().'
     </div>
   </nav>
   

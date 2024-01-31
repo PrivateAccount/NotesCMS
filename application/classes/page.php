@@ -400,11 +400,11 @@ class Page
 		{
 			if ($user_status) // admin panel
 			{
-				$result .= '<a class="btn btn-primary" href="/?route=admin"><i class="fas fa-user"></i> &nbsp; Admin Panel</a>';
+				$result .= '<a class="btn btn-primary" href="index.php?route=admin"><i class="fas fa-user"></i> &nbsp; Admin Panel</a>';
 			}
 			else // logowanie
 			{
-				$result .= '<a class="btn btn-primary" href="/?route=login"><i class="fas fa-sign-in-alt"></i> &nbsp; Logowanie</a>';
+				$result .= '<a class="btn btn-primary" href="index.php?route=login"><i class="fas fa-sign-in-alt"></i> &nbsp; Logowanie</a>';
 			}
 		}
 		

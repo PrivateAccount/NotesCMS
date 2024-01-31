@@ -93,7 +93,7 @@ class Statistics_View extends View
 							'value' => 'Narastająco: <b>'.$data['all']['period_counter'].'</b>', 'style' => 'display: inline; margin: 5px;',
 							),
 						array(
-							'value' => '<a href="/?route=statistics&mode=ip">Statystyka adresów IP</a>', 'style' => 'display: inline; margin: 5px;',
+							'value' => '<a href="index.php?route=statistics&mode=ip">Statystyka adresów IP</a>', 'style' => 'display: inline; margin: 5px;',
 							),
 						),
 					),
@@ -152,7 +152,7 @@ class Statistics_View extends View
 							'value' => 'Licznik adresów IP: <b>'.$data['all']['ip_counter'].'</b>', 'style' => 'display: inline; margin: 5px;',
 							),
 						array(
-							'value' => '<a href="/?route=statistics">Statystyka odsłon</a>', 'style' => 'display: inline; margin: 5px;',
+							'value' => '<a href="index.php?route=statistics">Statystyka odsłon</a>', 'style' => 'display: inline; margin: 5px;',
 							),
 						),
 					),
