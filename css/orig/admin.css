@@ -10,11 +10,12 @@ section.admin div.AdminGroupElements table { width: 100%; max-width: 1200px; pad
 section.admin div.AdminGroupElements table td.AdminGroupElement { width: 140px; vertical-align: top; }
 section.admin div.AdminGroupElements table td.AdminGroupElement p { font-size: smaller; }
 
-div.options-links { text-align: right; padding: 2em; }
+div.options-links { text-align: right; padding: 0; margin: -2em 1em 0 0; }
 div.options-links span.options-item { text-align: center; margin: 1em; font-size: small; }
 div.options-links span.options-item img { margin: 0 5px; }
 
 section.admin div.container table.table { width: 100%; font-size: small; }
+section.admin div.container table.table td.TableHeadingBar { font-size: large; }
 section.admin div.container table.table tr.HeaderRow { font-size: larger; }
 section.admin div.container table.table tr.HeaderRow th.TitleCell { padding: 1em 0; border-bottom: 1px solid #ccc; }
 section.admin div.container table.table td.DataCell { padding: 1em 0; font-size: small; }

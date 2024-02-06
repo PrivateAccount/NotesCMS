@@ -113,7 +113,7 @@ class Page
 		
 		$show_border = $this->app->get_settings()->get_config_key('options_panel_border') == 'true';
 
-		$result .= '<div class="mx-auto">';
+		$result .= '<div class="options">';
 		
 		if (count($this->options))
 		{
