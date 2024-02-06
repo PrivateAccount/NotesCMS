@@ -16,7 +16,7 @@ nav.navbar div.container ul.nav li.nav-selected { display: inline; padding: 0 1e
 
 section.content { padding: 1em; min-height: calc(100vh - 406px); }
 section.content div.container { padding: 10px 0 10px 0; }
-section.content div.container div.article { }
+section.content div.container div.article { padding: 0 1em; }
 section.content div.container div.article div.article-title { font-size: 1.75em; height: 1.75em; }
 section.content div.container div.article div.article-timestamp { display: flex; font-size: smaller; padding: 0 0 1em 0; border-bottom: 1px solid #ccc; }
 section.content div.container div.article div.article-timestamp img { margin: 0 1em 0 2em; }
@@ -37,9 +37,6 @@ div.card div.card-footer button { width: 100px; margin: 0 0 0 5px; }
 div.left { text-align: left; margin-left: auto; margin-right: auto; }
 div.center { text-align: center; margin-left: auto; margin-right: auto; }
 div.right { text-align: right; margin-left: auto; margin-right: auto; }
-
-td.ViewKey { width: 20%; }
-td.ViewData { width: 80%; }
 
 div.form-group { margin: 1em 0; }
 div.form-group label.control-label { display: inline-block; }

@@ -35,7 +35,7 @@ class Page
 			'main_description' => $this->app->get_settings()->get_config_key('main_description'), 
 			'main_keywords' => $this->app->get_settings()->get_config_key('main_keywords'), 
 			'main_author' => $this->app->get_settings()->get_config_key('main_author'), 
-			);
+		);
 
 		include LIB_DIR . 'message.php';
 		include LIB_DIR . 'dialog.php';
@@ -51,11 +51,11 @@ class Page
 	{
 		if (isset($_SESSION['install_mode']))
 		{
-			$logo = '<img src="'.PAGE_LOGO.'">';
+			$logo = '<img src="'. PAGE_LOGO .'">';
 		}
 		else
 		{
-			$logo = '<img src="'.$this->app->get_settings()->get_config_key('logo_image').'">';
+			$logo = '<img src="'. $this->app->get_settings()->get_config_key('logo_image') .'">';
 		}
 		return $logo;
 	}
@@ -125,7 +125,7 @@ class Page
 					if ($key == 'caption') $caption = $value;
 					if ($key == 'icon') $icon = $value;
 				}
-				$items .= '<span class="options-item"><a href="'.$link.'"><img src="'.$icon.'" alt="'.$caption.'" />'.$caption.'</a></span>';
+				$items .= '<span class="options-item"><a href="'. $link .'"><img src="'. $icon .'" alt="'. $caption .'" />'. $caption .'</a></span>';
 			}
 			if ($show_border)
 			{
@@ -297,7 +297,7 @@ class Page
 				if ($key == 'caption') $caption = $value;
 				if ($key == 'icon') $icon = $value;
 			}
-			$line .= '<li><a href="'.$link.'" class="navbar-link"><img src="'.$icon.'" />'.$caption.'</a></li>';
+			$line .= '<li><a href="'. $link .'" class="navbar-link"><img src="'. $icon .'" />'. $caption .'</a></li>';
 		}
 		
 		$line .= '</ul>';
@@ -324,7 +324,7 @@ class Page
 		{
 			foreach ($this->path as $link => $caption)
 			{
-				$path .= '<li>'.'<a href="'.$link.'">'.$caption.'</a>'.'</li>';
+				$path .= '<li>'.'<a href="'. $link .'">'. $caption .'</a>'.'</li>';
 			}
 		}
 
@@ -371,11 +371,11 @@ class Page
 
 					if ($access) // pozycja menu dostępna
 					{
-						$result .= '<li class="'.$class_name.'">'.'<a class="nav-link" href="'.$link.'" '.$option.'>'.$caption.'</a>'.'</li>';
+						$result .= '<li class="'. $class_name .'">'.'<a class="nav-link" href="'. $link .'" '. $option .'>'. $caption .'</a>'.'</li>';
 					}
 					else // pozycja menu z ochroną dostępu
 					{
-						$result .= '<li class="'.$class_name.'">'.'<a class="nav-link disabled" href="'.$link.'" '.$option.'>'.'<i>'.$caption.'</i>'.'</a>'.'</li>';
+						$result .= '<li class="'. $class_name .'">'.'<a class="nav-link disabled" href="'. $link .'" '. $option .'>'.'<i>'. $caption .'</i>'.'</a>'.'</li>';
 					}
 				}
 			}
@@ -456,11 +456,11 @@ class Page
 
 					if ($access) // pozycja menu dostępna
 					{
-						$this->menu .= '<li class="'.$class_name.'">'.'<a href="'.$link.'">'.$caption.'</a>'.'</li>';
+						$this->menu .= '<li class="'. $class_name .'">'.'<a href="'. $link .'">'. $caption .'</a>'.'</li>';
 					}
 					else // pozycja menu z ochroną dostępu
 					{
-						$this->menu .= '<li class="'.$class_name.'">'.'<a href="'.$link.'">'.'<i>'.$caption.'</i>'.'</a>'.'</li>';
+						$this->menu .= '<li class="'. $class_name .'">'.'<a href="'. $link .'">'.'<i>'. $caption .'</i>'.'</a>'.'</li>';
 					}
 						
 					$this->GetChildren($id, $user_status); // rekurencyjne zagłębianie w strukturę
@@ -494,7 +494,7 @@ class Page
 	{
 		$result = $this->app->get_settings()->get_config_key('page_footer');
 
-		$result .= '<div class="copyright">&copy; '.$this->get_metadata('company_name').' {_year_}. Wszystkie prawa zastrzeżone.</div>';
+		$result .= '<div class="copyright">&copy; '. $this->get_metadata('company_name') .' {_year_}. Wszystkie prawa zastrzeżone.</div>';
 		
 		$result = str_replace('{_year_}', date("Y"), $result);
 
@@ -554,12 +554,12 @@ class Page
 			}
 			else
 			{
-				$this->response = 'Template "'.$template.'" not found.';
+				$this->response = 'Template "'. $template .'" not found.';
 			}
 		}
 		else
 		{
-			$this->response = 'Layout "'.$layout.'" not found.';
+			$this->response = 'Layout "'. $layout .'" not found.';
 		}
 
 		echo $this->response;

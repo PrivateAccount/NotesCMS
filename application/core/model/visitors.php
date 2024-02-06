@@ -75,7 +75,7 @@ class Visitors_Model extends Model
 						$this->rows_list[$k][$key] = array(
 							'ip' => $this->rows_list[$k][$key],
 							'name' => $this->host_name->find_host_name($this->rows_list[$k][$key]),
-							);
+						);
 					}
 					if ($key == 'http_referer' || $key == 'request_uri')
 					{

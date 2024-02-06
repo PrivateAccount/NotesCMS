@@ -63,7 +63,7 @@ class Dialog
 		$main_dialog_body .= '<table>';
 		$main_dialog_body .= '<tr>';
 		$main_dialog_body .= '<td class="MsgIcon">';
-		$main_dialog_body .= '<img src="img/msg/'. $icon_name .'" alt="'.$this->dlg_title.'" />';
+		$main_dialog_body .= '<img src="img/msg/'. $icon_name .'" alt="'. $this->dlg_title .'" />';
 		$main_dialog_body .= '</td>';
 		$main_dialog_body .= '<td class="MsgMessage">';
 		$main_dialog_body .= $this->dlg_text;
@@ -94,7 +94,7 @@ class Dialog
 			$idx++;
 			$main_dialog_body .= '<td class="MsgButtons">';
 			$main_dialog_body .= '<form action="'. $link .'" method="post" role="form">';
-			$main_dialog_body .= '<button type="submit" value="'. $caption .'" name="confirm_'. $idx .'" id="dialog_button_'.$idx.'" class="btn btn-'.$btn_type[$idx].'" onClick="'. $onclick .'" style="width: 100px;">' . $caption . '</button>';
+			$main_dialog_body .= '<button type="submit" value="'. $caption .'" name="confirm_'. $idx .'" id="dialog_button_'. $idx .'" class="btn btn-'. $btn_type[$idx] .'" onClick="'. $onclick .'">'. $caption .'</button>';
 			$main_dialog_body .= '</form>';
 			$main_dialog_body .= '</td>';
 		}

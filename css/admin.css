@@ -15,7 +15,7 @@ div.options-links span.options-item { text-align: center; margin: 1em; font-size
 div.options-links span.options-item img { margin: 0 5px; }
 
 section.admin div.container table.table { width: 100%; font-size: small; }
-section.admin div.container table.table tr.HeaderRow {}
+section.admin div.container table.table tr.HeaderRow { font-size: larger; }
 section.admin div.container table.table tr.HeaderRow th.TitleCell { padding: 1em 0; border-bottom: 1px solid #ccc; }
 section.admin div.container table.table td.DataCell { padding: 1em 0; font-size: small; }
 section.admin div.container table.table td.ActionCell img { padding: 1em; }
@@ -32,3 +32,6 @@ table td img.ListImage { width: 100px; height: auto; }
 
 table span.gallery_item { margin: 1em; }
 table span.gallery_item img { max-width: 200px; max-height: 200px; padding: 1px; border: 1px solid #ccc; }
+
+div.card td.ViewKey { width: 20%; }
+div.card td.ViewData { width: 80%; }

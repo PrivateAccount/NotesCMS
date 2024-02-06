@@ -136,7 +136,7 @@ class Roles_Model extends Model
 				'Imię i nazwisko' => $user_name . ' ' . $user_surname,
 				'Login' => $user_login,
 				'Funkcje' => $functions,
-				);
+			);
 		}
 		catch (PDOException $e)
 		{
