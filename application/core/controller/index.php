@@ -8,7 +8,7 @@ class Index_Controller extends Controller
 		
 		$this->app->get_page()->set_path(array(
 			'index.php' => 'Strona główna',
-			));
+		));
 	}
 	
 	public function Index_Action()

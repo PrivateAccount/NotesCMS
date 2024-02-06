@@ -14,9 +14,9 @@ class Visitors_View extends View
 
 		$attribs = array(
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '25%', 'align' => 'left',   'visible' => '1', 'array' => '1'),
-			array('width' => '25%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '25%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '35%', 'align' => 'left',   'visible' => '1', 'array' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 		);
@@ -47,7 +47,7 @@ class Visitors_View extends View
 
 		$view_title = 'Szczegóły odwiedzin';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -70,8 +70,8 @@ class Visitors_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 

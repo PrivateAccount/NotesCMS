@@ -9,7 +9,7 @@ class Install_Controller extends Controller
 		$this->app->get_page()->set_path(array(
 			'index.php' => 'Strona główna',
 			'index.php?route='.MODULE_NAME => 'Instalacja serwisu',
-			));
+		));
 	}
 
 	public function Index_Action()
@@ -32,8 +32,8 @@ class Install_Controller extends Controller
 				'Serwis został już zainstalowany. Aby dokonać ponownej instalacji, należy skopiować plik <b>script.php</b> do katalogu <b>install</b>.',
 				array(
 					array('link' => 'index.php', 'caption' => 'Anuluj', 'onclick' => NULL),
-					)
-				);
+				)
+			);
 
 			$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 		}
@@ -76,7 +76,7 @@ class Install_Controller extends Controller
 				'first_name' => $first_name,
 				'last_name' => $last_name,
 				'save_time' => $save_time,
-				);
+			);
 
 			if (isset($_POST['save_settings']))
 			{

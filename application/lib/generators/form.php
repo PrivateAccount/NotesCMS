@@ -84,7 +84,7 @@ class FormBuilder extends Builder
 
 		$main_text .= '<form id="generator-form" action="'. $this->action .'" method="post" '.$this->enctype.' role="form">';
 
-		$main_text .= '<div class="card card-default center mb-4 mt-4" style="width: '. $this->width .';">';
+		$main_text .= '<div class="card left" style="width: '. $this->width .';">';
 
 		$main_text .= '<div class="card-heading">';
 		$main_text .= '<h3 class="card-title">';
@@ -144,7 +144,7 @@ class FormBuilder extends Builder
 									'value' => $opt_value,
 									'caption' => $opt_caption,
 									'selected' => $opt_selected,
-									);
+								);
 							}
 						}
 						if ($i == 'items')
@@ -175,7 +175,7 @@ class FormBuilder extends Builder
 									'action' => $item_action,
 									'style' => $item_style,
 									'button' => $item_button,
-									);
+								);
 							}
 						}
 					}
@@ -358,7 +358,7 @@ class FormBuilder extends Builder
 
 		if (count($this->buttons))
 		{
-			$main_text .= '<div class="card-footer" style="text-align: right; padding: 10px;">';
+			$main_text .= '<div class="card-footer" style="text-align: right;">';
 
 			foreach ($this->buttons as $k => $v)
 			{

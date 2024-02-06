@@ -10,7 +10,7 @@ class Users_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Użytkownicy',
-			));	
+		));	
 
 		$columns = array(
 			array('db_name' => 'id',            'column_name' => 'Id',          'sorting' => 1),
@@ -47,13 +47,13 @@ class Users_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowy użytkownik',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -86,7 +86,7 @@ class Users_Controller extends Controller
 					'status' => $_POST['status'],
 					'registered' => date("Y-m-d H:i:s"),
 					'active' => $_POST['active'],
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -126,8 +126,8 @@ class Users_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = NULL;
 				
@@ -171,7 +171,7 @@ class Users_Controller extends Controller
 					'status' => $_POST['status'],
 					'modified' => date("Y-m-d H:i:s"),
 					'active' => $_POST['active'],
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -206,23 +206,23 @@ class Users_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=setpass&id='.$id,
 						'caption' => 'Zmień hasło',
 						'icon' => 'img/access.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły użytkownika',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń użytkownika',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -308,23 +308,23 @@ class Users_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=setpass&id='.$id,
 						'caption' => 'Zmień hasło',
 						'icon' => 'img/access.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj użytkownika',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń użytkownika',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -360,7 +360,7 @@ class Users_Controller extends Controller
 					'user_password' => sha1($_POST['user_password']),
 					'user_password_repeat' => sha1($_POST['user_password_repeat']),
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -385,23 +385,23 @@ class Users_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły użytkownika',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj użytkownika',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń użytkownika',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$this->app->get_page()->set_options($options);
 

@@ -15,7 +15,7 @@ class Contact_View extends View
 
 		$form_title = 'Twoja wiadomość';
 		$form_image = 'far fa-edit';
-		$form_width = '100%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -28,43 +28,43 @@ class Contact_View extends View
 				'caption' => 'Imię lub nick', 
 				'data' => array(
 					'type' => 'text', 'id' => 'login', 'name' => 'login', 'value' => NULL, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Adres e-mail', 
 				'data' => array(
 					'type' => 'email', 'id' => 'email', 'name' => 'email', 'value' => NULL, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Treść', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'contents', 'name' => 'contents', 'rows' => 3, 'value' => NULL, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
 					'type' => 'checkbox', 'id' => 'sendme', 'name' => 'sendme', 'label' => 'Przyślij kopię tej wiadomości na mój adres e-mail', 'checked' => 'checked', 'value' => NULL,
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
 		$form_hiddens = array(
 			array(
 				'type' => 'hidden', 'id' => 'robot', 'name' => 'robot', 'value' => NULL,
-				),
-			);
+			),
+		);
 		
 		$form_object->set_hiddens($form_hiddens);
 
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'submit', 'name' => 'submit', 'value' => 'Wyślij',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

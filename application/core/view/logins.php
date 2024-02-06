@@ -48,7 +48,7 @@ class Logins_View extends View
 
 		$view_title = 'Szczegóły logowania';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -72,8 +72,8 @@ class Logins_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 

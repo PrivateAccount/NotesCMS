@@ -49,7 +49,7 @@ class ListBuilder extends Builder
 		{
 			$this->columns[] = array(
 				'db_name' => NULL, 'column_name' => 'Akcje', 'sorting' => NULL,
-				);
+			);
 		}
 
 		foreach ($this->attribs as $k => $v)
@@ -75,7 +75,6 @@ class ListBuilder extends Builder
 						
 		$paginator->init($base_link, $this->params['show_page'], $this->params['page_counter'], $this->params['page_band']);
 		
-		$main_text .= '<div class="mb-4">';
 		$main_text .= '<table class="table table-bordered">';
 
 		// listwa tytułowa:
@@ -248,7 +247,6 @@ class ListBuilder extends Builder
 		$main_text .= '</tr>';
 		
 		$main_text .= '</table>';
-		$main_text .= '</div>';
 
 		return $main_text;
 	}

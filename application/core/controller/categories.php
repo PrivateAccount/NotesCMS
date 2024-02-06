@@ -10,7 +10,7 @@ class Categories_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Kategorie',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',         'column_name' => 'Id',          'sorting' => 1),
@@ -49,23 +49,23 @@ class Categories_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowa kategoria',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Nawigacja górna',
 					'icon' => 'img/top_menu.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 					'caption' => 'Nawigacja boczna',
 					'icon' => 'img/left_menu.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -101,7 +101,7 @@ class Categories_Controller extends Controller
 					'target' => isset($_POST['target']) ? 1 : 0,
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -136,8 +136,8 @@ class Categories_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = NULL;
 
@@ -176,7 +176,7 @@ class Categories_Controller extends Controller
 					'target' => isset($_POST['target']) ? 1 : 0,
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -213,23 +213,23 @@ class Categories_Controller extends Controller
 						'link' => 'index.php?route=pages&action=edit&id='.$page_id,
 						'caption' => 'Edytuj stronę',
 						'icon' => 'img/category.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły kategorii',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń kategorię',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				if (!$page_id) unset($options[0]);
 
@@ -297,18 +297,18 @@ class Categories_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj kategorię',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń kategorię',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -334,7 +334,7 @@ class Categories_Controller extends Controller
 			$record = array(
 				'author_id' => $this->app->get_user()->get_value('user_id'),
 				'modified' => date("Y-m-d H:i:s"),
-				);
+			);
 
 			$result = $this->app->get_model_object()->MoveUp($id, $record);
 
@@ -361,7 +361,7 @@ class Categories_Controller extends Controller
 			$record = array(
 				'author_id' => $this->app->get_user()->get_value('user_id'),
 				'modified' => date("Y-m-d H:i:s"),
-				);
+			);
 
 			$result = $this->app->get_model_object()->MoveDown($id, $record);
 

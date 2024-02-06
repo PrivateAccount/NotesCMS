@@ -64,7 +64,7 @@ class Notes_View extends View
 
 		$form_title = $data ? 'Edycja notatki' : 'Nowa notatka';
 		$form_image = 'far fa-edit';
-		$form_width = '100%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -79,15 +79,15 @@ class Notes_View extends View
 				'caption' => 'Tytuł', 
 				'data' => array(
 					'type' => 'text', 'id' => 'title', 'name' => 'title', 'value' => $main_title, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Treść', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'contents', 'name' => 'contents', 'rows' => 20, 'value' => $main_contents, 'required' => 'required',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -98,14 +98,14 @@ class Notes_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -122,7 +122,7 @@ class Notes_View extends View
 
 		$view_title = 'Szczegóły notatki';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '85%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -151,14 +151,14 @@ class Notes_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'skip', 'id' => 'prev_button', 'name' => 'prev_button', 'value' => '<i class=\'fas fa-backward\'></i>', 'onclick' => '$(\'form#'.$view_id.'\').attr(\'action\', \''.$view_action.'&action=view&direction=prev&id='.$data['id'].'\');',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'skip', 'id' => 'next_button', 'name' => 'next_button', 'value' => '<i class=\'fas fa-forward\'></i>', 'onclick' => '$(\'form#'.$view_id.'\').attr(\'action\', \''.$view_action.'&action=view&direction=next&id='.$data['id'].'\');',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 

@@ -10,7 +10,7 @@ class Images_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Galeria',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',             'column_name' => 'Id',          'sorting' => 1),
@@ -42,23 +42,23 @@ class Images_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowe obrazki',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=gallery',
 					'caption' => 'Podgląd galerii',
 					'icon' => 'img/link.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=load',
 					'caption' => 'Przegląd obrazków',
 					'icon' => 'img/picture.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -99,7 +99,7 @@ class Images_Controller extends Controller
 					'owner_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
 					'files' => $file_objects,
-					);
+				);
 
 				if (isset($_POST['upload_button']))
 				{
@@ -124,8 +124,8 @@ class Images_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = NULL;
 
@@ -170,7 +170,7 @@ class Images_Controller extends Controller
 					'owner_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
 					'files' => $file_object,
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -205,28 +205,28 @@ class Images_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=preview&id='.$id,
 						'caption' => 'Podgląd obrazka',
 						'icon' => 'img/image_size.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły obrazka',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=download&id='.$id,
 						'caption' => 'Pobierz obrazek',
 						'icon' => 'img/save.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń obrazek',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -290,28 +290,28 @@ class Images_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=preview&id='.$id,
 						'caption' => 'Podgląd obrazka',
 						'icon' => 'img/image_size.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj obrazek',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=download&id='.$id,
 						'caption' => 'Pobierz obrazek',
 						'icon' => 'img/save.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń obrazek',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -337,28 +337,28 @@ class Images_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 					'caption' => 'Szczegóły obrazka',
 					'icon' => 'img/info.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 					'caption' => 'Edytuj obrazek',
 					'icon' => 'img/edit.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=download&id='.$id,
 					'caption' => 'Pobierz obrazek',
 					'icon' => 'img/save.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 					'caption' => 'Usuń obrazek',
 					'icon' => 'img/trash.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetOne($id);
 
@@ -381,18 +381,18 @@ class Images_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zarządzanie galerią',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=gallery',
 					'caption' => 'Podgląd galerii',
 					'icon' => 'img/link.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$import = $this->app->get_model_object()->GetImages();
 
@@ -433,23 +433,23 @@ class Images_Controller extends Controller
 					'link' => $last_url,
 					'caption' => 'Wróć do edycji',
 					'icon' => 'img/edit.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zarządzanie galerią',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=load',
 					'caption' => 'Przegląd obrazków',
 					'icon' => 'img/picture.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			if (!$last_url) unset($options[0]);
 

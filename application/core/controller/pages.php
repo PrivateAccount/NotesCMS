@@ -10,7 +10,7 @@ class Pages_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Strony',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',          'column_name' => 'Id',          'sorting' => 1),
@@ -46,13 +46,13 @@ class Pages_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowa strona',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -86,7 +86,7 @@ class Pages_Controller extends Controller
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'visible' => $_POST['visible'],
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -121,13 +121,13 @@ class Pages_Controller extends Controller
 						'link' => 'index.php?route=images&action=gallery',
 						'caption' => 'Wstaw obrazek',
 						'icon' => 'img/link.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$_SESSION['last_url'] = parent::clean_url($_SERVER['REQUEST_URI']);
 
@@ -168,7 +168,7 @@ class Pages_Controller extends Controller
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'visible' => $_POST['visible'],
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -205,38 +205,38 @@ class Pages_Controller extends Controller
 						'link' => 'index.php?route=images&action=gallery',
 						'caption' => 'Wstaw obrazek',
 						'icon' => 'img/link.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route=categories&action=edit&id='.$category_id,
 						'caption' => 'Edytuj kategorię',
 						'icon' => 'img/category.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły strony',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=archive&id='.$id,
 						'caption' => 'Archiwizuj stronę',
 						'icon' => 'img/archive.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=restore&id='.$id,
 						'caption' => 'Przywróć stronę',
 						'icon' => 'img/archives.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń stronę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$_SESSION['last_url'] = parent::clean_url($_SERVER['REQUEST_URI']);
 
@@ -308,28 +308,28 @@ class Pages_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj stronę',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=archive&id='.$id,
 						'caption' => 'Archiwizuj stronę',
 						'icon' => 'img/archive.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=restore&id='.$id,
 						'caption' => 'Przywróć stronę',
 						'icon' => 'img/archives.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń stronę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -374,7 +374,7 @@ class Pages_Controller extends Controller
 			{
 				$record = array(
 					'archive_id' => isset($_POST['archives']) ? $_POST['archives'] : NULL,
-					);
+				);
 
 				if (isset($_POST['restore_button']))
 				{
@@ -399,23 +399,23 @@ class Pages_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły strony',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj stronę',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń stronę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 				

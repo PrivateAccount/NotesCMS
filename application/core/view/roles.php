@@ -76,14 +76,14 @@ class Roles_View extends View
 						{
 							$users[] = array(
 								'value' => $user_id, 'caption' => $user_name . ' ' . $user_surname . ' (' . $user_login . ')',
-								);
+							);
 						}
 					}
 					else // nowa rola
 					{
 						$users[] = array(
 							'value' => $user_id, 'caption' => $user_name . ' ' . $user_surname . ' (' . $user_login . ')',
-							);
+						);
 					}
 				}
 			}
@@ -104,8 +104,8 @@ class Roles_View extends View
 						'caption' => NULL, 
 						'data' => array(
 							'type' => 'checkbox', 'id' => 'function_'.$function_id, 'name' => 'function_'.$function_id, 'label' => $meaning . ' (' . $module . ')', $chk => $chk, 'value' => NULL,
-							),
-						);
+						),
+					);
 				}
 			}
 		}
@@ -116,7 +116,7 @@ class Roles_View extends View
 
 		$form_title = $data ? 'Edycja roli użytkownika' : 'Nowa rola użytkownika';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -132,15 +132,15 @@ class Roles_View extends View
 				'data' => array(
 					'type' => 'select', 'id' => 'user_id', 'name' => 'user_id', 
 					'option' => $users, 
-					),
 				),
+			),
 			array(
 				'caption' => 'Funkcje', 
 				'data' => array(
 					'type' => 'label', 'value' => NULL,
-					),
 				),
-			);
+			),
+		);
 		
 		foreach ($functions as $function)
 		{
@@ -156,14 +156,14 @@ class Roles_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -180,7 +180,7 @@ class Roles_View extends View
 
 		$view_title = 'Szczegóły roli użytkownika';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -203,8 +203,8 @@ class Roles_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 

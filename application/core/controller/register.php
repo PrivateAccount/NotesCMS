@@ -9,7 +9,7 @@ class Register_Controller extends Controller
 		$this->app->get_page()->set_path(array(
 			'index.php' => 'Strona główna',
 			'index.php?route='.MODULE_NAME => 'Rejestracja',
-			));
+		));
 		
 		$this->required = array('login', 'name', 'surname', 'email', 'password');
 	}
@@ -58,7 +58,7 @@ class Register_Controller extends Controller
 				'email_register_subject' => $this->app->get_settings()->get_config_key('email_register_subject'),
 				'email_register_body_1' => $this->app->get_settings()->get_config_key('email_register_body_1'),
 				'email_register_body_2' => $this->app->get_settings()->get_config_key('email_register_body_2'),
-				);
+			);
 
 			$this->app->get_model_object()->Inform($data, $message_options);
 	

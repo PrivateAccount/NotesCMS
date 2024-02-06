@@ -9,7 +9,7 @@ class Password_Controller extends Controller
 		$this->app->get_page()->set_path(array(
 			'index.php' => 'Strona główna',
 			'index.php?route='.MODULE_NAME => 'Reset hasła',
-			));
+		));
 	}
 
 	public function Index_Action()
@@ -47,7 +47,7 @@ class Password_Controller extends Controller
 				'email_remindpwd_subject' => $this->app->get_settings()->get_config_key('email_remindpwd_subject'),
 				'email_remindpwd_body_1' => $this->app->get_settings()->get_config_key('email_remindpwd_body_1'),
 				'email_remindpwd_body_2' => $this->app->get_settings()->get_config_key('email_remindpwd_body_2'),
-				);
+			);
 
 			$this->app->get_model_object()->Send($data, $message_options);
 	

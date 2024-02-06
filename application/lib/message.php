@@ -39,7 +39,7 @@ class Message
 				break;
 		}
 
-		$main_message_body .= '<div class="message-bar mb-5 mt-4">';
+		$main_message_body .= '<div class="message-bar">';
 		$main_message_body .= '<div class="alert alert-'. $alert_type .'" style="text-align: center;" role="alert">';
 		$main_message_body .= $_SESSION['message']['text'];
 		$main_message_body .= '</div>';

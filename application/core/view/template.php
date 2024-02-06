@@ -26,7 +26,7 @@ class Template_View extends View
 
 		$form_title = 'Edycja szablonu';
 		$form_image = 'far fa-edit';
-		$form_width = '100%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -39,37 +39,37 @@ class Template_View extends View
 				'caption' => 'Szablon', 
 				'data' => array(
 					'type' => 'label', 'id' => 'path', 'name' => 'path', 'value' => $path,
-					),
 				),
+			),
 			array(
 				'caption' => 'Treść', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'contents', 'name' => 'contents', 'rows' => 30, 'value' => $contents, 'required' => 'required', 'class' => 'focused',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
 		$form_hiddens = array(
 			array(
 				'type' => 'hidden', 'id' => 'filename', 'name' => 'filename', 'value' => $filename,
-				),
-			);
+			),
+		);
 			
 		$form_object->set_hiddens($form_hiddens);
 
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

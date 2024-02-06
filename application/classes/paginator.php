@@ -68,8 +68,8 @@ class List_Paginator
 		}
 		else
 		{
-			$output .= '<li class="page-item"><a href="'.$this->base_link.'&skip=first" class="page-link PagePointer"><span>&#171;</span></a></li>';
-			$output .= '<li class="page-item"><a href="'.$this->base_link.'&skip=prev" class="page-link PagePointer"><span>&#8249;</span></a></li>';
+			$output .= '<a href="'.$this->base_link.'&skip=first" class="page-link PagePointer"><li class="page-item"><span>&#171;</span></li></a>';
+			$output .= '<a href="'.$this->base_link.'&skip=prev" class="page-link PagePointer"><li class="page-item"><span>&#8249;</span></li></a>';
 		}
 
 		$shown = 1;
@@ -89,7 +89,7 @@ class List_Paginator
 			if ($i == $this->current_pointer + 1)
 				$output .= '<li class="page-item active"><a class="page-link PagePointerCurrent">'.$i.'</a></li>';
 			else
-				$output .= '<li class="page-item"><a href="'.$this->base_link.'&page='.$i.'" class="page-link PagePointer">'.$i.'</a></li>';
+				$output .= '<a href="'.$this->base_link.'&page='.$i.'" class="page-link PagePointer"><li class="page-item">'.$i.'</li></a>';
 		}
 
 		if (intval($this->current_pointer) == intval($this->pointer_count - 1) || $this->pointer_count == 0)
@@ -99,8 +99,8 @@ class List_Paginator
 		}
 		else
 		{
-			$output .= '<li class="page-item"><a href="'.$this->base_link.'&skip=next" class="page-link PagePointer"><span>&#8250;</span></a></li>';
-			$output .= '<li class="page-item"><a href="'.$this->base_link.'&skip=last" class="page-link PagePointer"><span>&#187;</span></a></li>';
+			$output .= '<a href="'.$this->base_link.'&skip=next" class="page-link PagePointer"><li class="page-item"><span>&#8250;</span></li></a>';
+			$output .= '<a href="'.$this->base_link.'&skip=last" class="page-link PagePointer"><li class="page-item"><span>&#187;</span></li></a>';
 		}
 		
 		$output .= '</ul>';
@@ -135,7 +135,7 @@ class List_Paginator
 			$output .= '<input type="hidden" name="route" value="'.$this->route.'" />';
 		if ($this->action)
 			$output .= '<input type="hidden" name="action" value="'.$this->action.'" />';
-		$output .= '<input type="text" name="page" id="page-number" class="form-control" style="width: 80px; margin: 2px;">';
+		$output .= '<input type="text" name="page" id="page-number" class="form-control" style="width: 40px; margin: 0 5px;">';
 		$output .= '<button class="btn btn-primary" name="navi" type="submit" value="go" style="margin: 2px;">idź</button>';
 		$output .= '</form>';
 		$output .= '</div>';

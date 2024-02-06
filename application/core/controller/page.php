@@ -89,7 +89,7 @@ class Page_Controller extends Controller
 			'page_id' => $id,
 			'contents' => isset($_POST['contents']) ? $_POST['contents'] : NULL,
 			'visible' => $this->app->get_settings()->get_config_key('moderate_comments') == 'true' ? 0 : 1,
-			);
+		);
 
 		$result = $this->app->get_model_object()->Comment($record);
 

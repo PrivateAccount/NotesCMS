@@ -114,7 +114,7 @@ class Users_View extends View
 
 		$form_title = $data ? 'Edycja użytkownika' : 'Nowy użytkownik';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -129,32 +129,32 @@ class Users_View extends View
 				'caption' => 'Imię', 
 				'data' => array(
 					'type' => 'text', 'id' => 'user_name', 'name' => 'user_name', 'value' => $main_user_name, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Nazwisko', 
 				'data' => array(
 					'type' => 'text', 'id' => 'user_surname', 'name' => 'user_surname', 'value' => $main_user_surname, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Login', 
 				'data' => array(
 					'type' => 'text', 'id' => 'user_login', 'name' => 'user_login', 'value' => $main_user_login, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'E-mail', 
 				'data' => array(
 					'type' => 'email', 'id' => 'email', 'name' => 'email', 'value' => $main_email, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Hasło', 
 				'data' => array(
 					'type' => 'password', 'id' => 'user_password', 'name' => 'user_password', 'value' => $main_user_password, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Grupa użytkowników', 
 				'data' => array(
@@ -162,16 +162,16 @@ class Users_View extends View
 					'option' => array(
 						array(
 							'value' => '1', 'caption' => 'Administratorzy', $sel[1] => $sel[1],
-							),
+						),
 						array(
 							'value' => '2', 'caption' => 'Operatorzy', $sel[2] => $sel[2],
-							),
+						),
 						array(
 							'value' => '3', 'caption' => 'Zarejestrowani', $sel[3] => $sel[3],
-							),
-						), 
-					),
+						),
+					), 
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
@@ -179,14 +179,14 @@ class Users_View extends View
 					'items' => array(
 						array(
 							'id' => 'active_yes', 'label' => 'Aktywny', $chk[1] => $chk[1], 'value' => 1,
-							),
+						),
 						array(
 							'id' => 'active_no', 'label' => 'Zablokowany', $chk[0] => $chk[0], 'value' => 0,
-							),
 						),
 					),
 				),
-			);
+			),
+		);
 
 		if ($data) unset($form_inputs[4]); // wyklucza z listy inputów pole hasło
 
@@ -195,24 +195,24 @@ class Users_View extends View
 		$form_object->set_inputs($form_inputs);
 		
 		$form_hiddens = $user->get_value('user_status') == ADMIN ? array() : array(
-				array(
-					'type' => 'hidden', 'id' => 'status', 'name' => 'status', 'value' => $main_status,
-					),
-				);
+			array(
+				'type' => 'hidden', 'id' => 'status', 'name' => 'status', 'value' => $main_status,
+			),
+		);
 			
 		$form_object->set_hiddens($form_hiddens);
 
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -229,7 +229,7 @@ class Users_View extends View
 
 		$view_title = 'Szczegóły użytkownika';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -257,8 +257,8 @@ class Users_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 
@@ -275,7 +275,7 @@ class Users_View extends View
 
 		$form_title = 'Nowe hasło';
 		$form_image = 'fas fa-key';
-		$form_width = '300px';
+		$form_width = '400px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -288,15 +288,15 @@ class Users_View extends View
 				'caption' => 'Hasło', 
 				'data' => array(
 					'type' => 'password', 'id' => 'user_password', 'name' => 'user_password', 'value' => NULL, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Powtórz', 
 				'data' => array(
 					'type' => 'password', 'id' => 'user_password_repeat', 'name' => 'user_password_repeat', 'value' => NULL, 'required' => 'required',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -307,11 +307,11 @@ class Users_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

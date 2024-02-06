@@ -312,7 +312,7 @@ $sql_script = array(
 			",
 			"
 				INSERT INTO `configuration` (`id`, `key_name`, `key_value`, `meaning`, `field_type`, `active`, `modified`) VALUES
-				(1, 'logo_image', 'fas fa-book-reader', 'obrazek logo w nagłówku strony', 1, 1, :save_time),
+				(1, 'logo_image', 'gallery/logo/2', 'obrazek logo w nagłówku strony', 1, 1, :save_time),
 				(2, 'company_name', :main_title, 'nazwa firmy pokazywana obok obrazka logo', 1, 1, :save_time),
 				(3, 'main_title', :main_title, 'tytuł strony internetowej', 1, 1, :save_time),
 				(4, 'main_description', :main_description, 'meta tag descriptions nagłówka strony', 2, 1, :save_time),

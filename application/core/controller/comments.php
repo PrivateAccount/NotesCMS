@@ -10,7 +10,7 @@ class Comments_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Komentarze',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',              'column_name' => 'Id',                'sorting' => 1),
@@ -42,18 +42,18 @@ class Comments_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=0',
 					'caption' => 'Komentarze nadesłane',
 					'icon' => 'img/category.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Komentarze zatwierdzone',
 					'icon' => 'img/checked.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -90,7 +90,7 @@ class Comments_Controller extends Controller
 			{
 				$record = array(
 					'comment_content' => strip_tags($_POST['comment_content']),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -125,28 +125,28 @@ class Comments_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=confirm&id='.$id,
 						'caption' => 'Zatwierdź komentarz',
 						'icon' => 'img/accept.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=disable&id='.$id,
 						'caption' => 'Zablokuj komentarz',
 						'icon' => 'img/remove.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Podgląd komentarza',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń komentarz',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -169,7 +169,7 @@ class Comments_Controller extends Controller
 			
 			$record = array(
 				'visible' => 1,
-				);
+			);
 
 			$result = $this->app->get_model_object()->Save($id, $record);
 
@@ -193,7 +193,7 @@ class Comments_Controller extends Controller
 			
 			$record = array(
 				'visible' => 0,
-				);
+			);
 
 			$result = $this->app->get_model_object()->Save($id, $record);
 
@@ -267,28 +267,28 @@ class Comments_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=confirm&id='.$id,
 						'caption' => 'Zatwierdź komentarz',
 						'icon' => 'img/accept.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=disable&id='.$id,
 						'caption' => 'Zablokuj komentarz',
 						'icon' => 'img/remove.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj komentarz',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń komentarz',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 

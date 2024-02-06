@@ -33,7 +33,7 @@ class Database
 				'mysql:host='.$this->host.';dbname='.$this->database.';', 
 				$this->user, 
 				$this->password
-				);
+			);
 			$this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$this->connection->exec('set names utf8');
 		}

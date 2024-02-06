@@ -50,7 +50,7 @@ class CustomBuilder extends Builder
 		{
 			$this->columns[] = array(
 				'db_name' => NULL, 'column_name' => 'Akcje', 'sorting' => NULL,
-				);
+			);
 		}
 
 		foreach ($this->attribs as $k => $v)
@@ -81,7 +81,6 @@ class CustomBuilder extends Builder
 						
 		$paginator->init($base_link, $this->params['show_page'], $this->params['page_counter'], $this->params['page_band']);
 		
-		$main_text .= '<div class="mb-4">';
 		$main_text .= '<table class="table table-bordered">';
 
 		// listwa tytułowa:
@@ -247,7 +246,7 @@ class CustomBuilder extends Builder
 			// customowe kolumny:
 
 			$main_text .= '<tr class="' . $class_name . '">';
-			$main_text .= '<td colspan="'. count($active_fields) .'" class="'. $data_class_name .'" style="text-align: '. $this->attribs[$custom]['align'] .'">'. $custom_text .'</td>';
+			$main_text .= '<td colspan="'. count($active_fields) .'" class="'. $data_class_name .'" style="text-align: '. $this->attribs[$custom]['align'] .'; padding: 1em 10em; border-bottom: 1px dotted #ccc;">'. $custom_text .'</td>';
 			$main_text .= '</tr>';
 		}
 
@@ -270,7 +269,6 @@ class CustomBuilder extends Builder
 		$main_text .= '</tr>';
 		
 		$main_text .= '</table>';
-		$main_text .= '</div>';
 
 		return $main_text;
 	}

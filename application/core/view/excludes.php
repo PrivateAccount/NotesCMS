@@ -58,7 +58,7 @@ class Excludes_View extends View
 
 		$form_title = $data ? 'Edycja adresu wykluczenia' : 'Nowy adres wykluczenia';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -73,9 +73,9 @@ class Excludes_View extends View
 				'caption' => 'Adres IP', 
 				'data' => array(
 					'type' => 'text', 'id' => 'visitor_ip', 'name' => 'visitor_ip', 'value' => $main_ip, 'required' => 'required', 'class' => 'focused',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -86,11 +86,11 @@ class Excludes_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

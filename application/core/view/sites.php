@@ -107,7 +107,7 @@ class Sites_View extends View
 
 		$form_title = $data ? 'Edycja strony' : 'Nowa strona';
 		$form_image = 'far fa-edit';
-		$form_width = '100%';
+		$form_width = '700px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -122,32 +122,32 @@ class Sites_View extends View
 				'caption' => 'Tytuł', 
 				'data' => array(
 					'type' => 'text', 'id' => 'title', 'name' => 'title', 'value' => $main_title, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Opis', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'description', 'name' => 'description', 'rows' => 2, 'value' => $main_description, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Treść', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'contents', 'name' => 'contents', 'rows' => 20, 'value' => $main_contents, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
 					'type' => 'checkbox', 'id' => 'main_page', 'name' => 'main_page', 'label' => 'Strona główna serwisu (startowa)', $main_page => $main_page, 'value' => $main_main_page,
-					),
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
 					'type' => 'checkbox', 'id' => 'system_page', 'name' => 'system_page', 'label' => 'Strona kontaktowa serwisu', $system_page => $system_page, 'value' => $main_system_page,
-					),
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
@@ -155,36 +155,36 @@ class Sites_View extends View
 					'items' => array(
 						array(
 							'id' => 'active_yes', 'label' => 'Aktywna', $chk[1] => $chk[1], 'value' => 1,
-							),
+						),
 						array(
 							'id' => 'active_no', 'label' => 'Nieaktywna', $chk[0] => $chk[0], 'value' => 0,
-							),
 						),
 					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
 		$form_hiddens = array(
 			array(
 				'type' => 'hidden', 'id' => 'category_id', 'name' => 'category_id', 'value' => $main_category_id,
-				),
-			);
+			),
+		);
 			
 		$form_object->set_hiddens($form_hiddens);
 
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -201,7 +201,7 @@ class Sites_View extends View
 
 		$view_title = 'Szczegóły strony';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '85%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -229,8 +229,8 @@ class Sites_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 
@@ -247,7 +247,7 @@ class Sites_View extends View
 
 		$form_title = 'Archiwa strony';
 		$form_image = 'far fa-folder-open';
-		$form_width = '350px';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -275,41 +275,41 @@ class Sites_View extends View
 				'caption' => 'Strona', 
 				'data' => array(
 					'type' => 'label', 'value' => $title,
-					),
 				),
+			),
 			array(
 				'caption' => 'Wersje', 
 				'data' => array(
 					'type' => 'label', 'value' => NULL,
-					),
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
 					'type' => 'radio', 'name' => 'archives', 
 					'items' => $form_items,
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
 		$form_hiddens = array(
 			array(
 				'type' => 'hidden', 'id' => 'master_page_id', 'name' => 'master_page_id', 'value' => NULL,
-				),
-			);
+			),
+		);
 			
 		$form_object->set_hiddens($form_hiddens);
 
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'restore_button', 'name' => 'restore_button', 'value' => 'Przywróć',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

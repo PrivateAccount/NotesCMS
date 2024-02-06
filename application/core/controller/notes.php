@@ -10,7 +10,7 @@ class Notes_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Notatki',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',         'column_name' => 'Id',          'sorting' => 1),
@@ -40,13 +40,13 @@ class Notes_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowa notatka',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -75,7 +75,7 @@ class Notes_Controller extends Controller
 					'contents' => $_POST['contents'],
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -110,8 +110,8 @@ class Notes_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$this->app->get_page()->set_options($options);
 
@@ -139,7 +139,7 @@ class Notes_Controller extends Controller
 					'contents' => $_POST['contents'],
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -174,18 +174,18 @@ class Notes_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły notatki',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń notatkę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 				
@@ -262,18 +262,18 @@ class Notes_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj notatkę',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń notatkę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 

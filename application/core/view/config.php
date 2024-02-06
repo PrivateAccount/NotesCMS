@@ -85,7 +85,7 @@ class Config_View extends View
 
 		$form_title = $data ? 'Edycja klucza konfiguracji' : 'Nowy klucz konfiguracji';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -102,16 +102,16 @@ class Config_View extends View
 					'caption' => 'Wartość klucza', 
 					'data' => array(
 						'type' => 'text', 'id' => 'key_value', 'name' => 'key_value', 'value' => $main_key_value, 'required' => 'required',
-						),
-					);
+					),
+				);
 				break;
 			case 2:
 				$key_value_element = array(
 					'caption' => 'Wartość klucza', 
 					'data' => array(
 						'type' => 'textarea', 'id' => 'key_value', 'name' => 'key_value', 'value' => $main_key_value, 'rows' => 4, 'required' => 'required',
-						),
-					);
+					),
+				);
 				break;
 			case 3:
 				$set = array(NULL, NULL);
@@ -125,13 +125,13 @@ class Config_View extends View
 						'items' => array(
 							array(
 								'id' => 'setting_yes', 'label' => 'Aktywne (włączone)', $set[1] => $set[1], 'value' => 'true',
-								),
+							),
 							array(
 								'id' => 'setting_no', 'label' => 'Nieaktywne (wyłączone)', $set[0] => $set[0], 'value' => 'false',
-								),
 							),
 						),
-					);
+					),
+				);
 				break;
 		}
 
@@ -140,8 +140,8 @@ class Config_View extends View
 				'caption' => 'Nazwa klucza', 
 				'data' => array(
 					'type' => 'text', 'id' => 'key_name', 'name' => 'key_name', 'value' => $main_key_name, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			$key_value_element,
 			array(
 				'caption' => 'Typ wartości', 
@@ -150,22 +150,22 @@ class Config_View extends View
 					'option' => array(
 						array(
 							'value' => '1', 'caption' => 'string (pole tekstowe - krótkie)', $sel[1] => $sel[1],
-							),
+						),
 						array(
 							'value' => '2', 'caption' => 'area (obszar opisowy - długi)', $sel[2] => $sel[2],
-							),
+						),
 						array(
 							'value' => '3', 'caption' => 'option (wartość true - false)', $sel[3] => $sel[3],
-							),
-						), 
-					),
+						),
+					), 
 				),
+			),
 			array(
 				'caption' => 'Znaczenie', 
 				'data' => array(
 					'type' => 'text', 'id' => 'meaning', 'name' => 'meaning', 'value' => $main_meaning,
-					),
 				),
+			),
 			array(
 				'caption' => 'Aktywny w serwisie', 
 				'data' => array(
@@ -173,14 +173,14 @@ class Config_View extends View
 					'items' => array(
 						array(
 							'id' => 'active_yes', 'label' => 'Tak', $chk[1] => $chk[1], 'value' => 1,
-							),
+						),
 						array(
 							'id' => 'active_no', 'label' => 'Nie', $chk[0] => $chk[0], 'value' => 0,
-							),
 						),
 					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -191,14 +191,14 @@ class Config_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -215,7 +215,7 @@ class Config_View extends View
 
 		$view_title = 'Szczegóły klucza konfiguracji';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -242,8 +242,8 @@ class Config_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 
 		$view_object->set_buttons($view_buttons);
 

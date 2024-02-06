@@ -34,12 +34,10 @@ class FoundBuilder extends Builder
 	{
 		$main_text = NULL;
 
-		$main_text .= '<div class="mb-4 mt-4">';
 		$main_text .= '<h3 class="found-title">';
 		$main_text .= '<i class="'.$this->image.'"></i>';
 		$main_text .= '&nbsp; '.$this->title;
 		$main_text .= '</h3>';
-		$main_text .= '</div>';
 
 		$main_text .= '<table class="table table-bordered">';
 		

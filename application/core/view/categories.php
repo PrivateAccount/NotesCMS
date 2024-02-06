@@ -96,7 +96,7 @@ class Categories_View extends View
 
 		$categories[] = array(
 			'value' => 0, 'caption' => '(root)',
-			);
+		);
 
 		foreach ($import as $k => $v) 
 		{
@@ -108,7 +108,7 @@ class Categories_View extends View
 			$sel[$parent_id] = $parent_id == $main_parent_id ? 'selected' : NULL;
 			$categories[] = array(
 				'value' => $parent_id, 'caption' => $caption, $sel[$parent_id] => $sel[$parent_id],
-				);
+			);
 		}
 
 		$sel = range(0, 5);
@@ -125,7 +125,7 @@ class Categories_View extends View
 
 		$form_title = $data ? 'Edycja kategorii' : 'Nowa kategoria';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -143,32 +143,32 @@ class Categories_View extends View
 					'items' => array(
 						array(
 							'id' => 'section_navbar', 'label' => 'Pasek nawigacji (góra)', $sec[1] => $sec[1], 'value' => 1,
-							),
+						),
 						array(
 							'id' => 'section_category', 'label' => 'Lista kategorii (bok)', $sec[2] => $sec[2], 'value' => 2,
-							),
 						),
 					),
 				),
+			),
 			array(
 				'caption' => 'Rodzic', 
 				'data' => array(
 					'type' => 'select', 'id' => 'parent_id', 'name' => 'parent_id', 
 					'option' => $categories, 
-					),
 				),
+			),
 			array(
 				'caption' => 'Tekst (menu)', 
 				'data' => array(
 					'type' => 'text', 'id' => 'caption', 'name' => 'caption', 'value' => $main_caption, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Adres (link)', 
 				'data' => array(
 					'type' => 'text', 'id' => 'link', 'name' => 'link', 'value' => $main_link, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Dostęp dla profilu użytkownika', 
 				'data' => array(
@@ -176,25 +176,25 @@ class Categories_View extends View
 					'option' => array(
 						array(
 							'value' => '1', 'caption' => '1 (administratorzy)', $sel[1] => $sel[1],
-							),
+						),
 						array(
 							'value' => '2', 'caption' => '2 (operatorzy)', $sel[2] => $sel[2],
-							),
+						),
 						array(
 							'value' => '3', 'caption' => '3 (użytkownicy)', $sel[3] => $sel[3],
-							),
+						),
 						array(
 							'value' => '4', 'caption' => '4 (wszyscy, goście)', $sel[4] => $sel[4],
-							),
-						), 
-					),
+						),
+					), 
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
 					'type' => 'checkbox', 'id' => 'target', 'name' => 'target', 'label' => 'Otwórz w osobnym oknie', $target => $target, 'value' => NULL,
-					),
 				),
+			),
 			array(
 				'caption' => NULL, 
 				'data' => array(
@@ -202,14 +202,14 @@ class Categories_View extends View
 					'items' => array(
 						array(
 							'id' => 'active_yes', 'label' => 'Aktywna', $chk[1] => $chk[1], 'value' => 1,
-							),
+						),
 						array(
 							'id' => 'active_no', 'label' => 'Nieaktywna', $chk[0] => $chk[0], 'value' => 0,
-							),
 						),
 					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -220,14 +220,14 @@ class Categories_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -244,7 +244,7 @@ class Categories_View extends View
 
 		$view_title = 'Szczegóły kategorii';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -276,8 +276,8 @@ class Categories_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 

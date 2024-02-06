@@ -15,7 +15,7 @@ class Login_View extends View
 
 		$form_title = 'Logowanie';
 		$form_image = 'fas fa-sign-in-alt';
-		$form_width = '300px';
+		$form_width = '400px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -28,15 +28,15 @@ class Login_View extends View
 				'caption' => 'Login lub e-mail', 
 				'data' => array(
 					'type' => 'text', 'id' => 'login', 'name' => 'login', 'value' => NULL, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Hasło', 
 				'data' => array(
 					'type' => 'password', 'id' => 'password', 'name' => 'password', 'value' => NULL, 'required' => 'required',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -47,8 +47,8 @@ class Login_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'submit', 'name' => 'submit', 'value' => 'Zaloguj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

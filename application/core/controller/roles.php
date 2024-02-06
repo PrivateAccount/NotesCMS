@@ -10,7 +10,7 @@ class Roles_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Access Control List',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',          'column_name' => 'Id',               'sorting' => 1),
@@ -38,13 +38,13 @@ class Roles_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowa rola',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -84,7 +84,7 @@ class Roles_Controller extends Controller
 						'user_id' => $user_id,
 						'function_id' => $function_id,
 						'access' => isset($_POST['function_'.$function_id]) ? 1 : 0,
-						);
+					);
 					$records[] = $record;
 				}
 
@@ -121,8 +121,8 @@ class Roles_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$users = $this->app->get_model_object()->GetNewUsers();
 				$functions = $this->app->get_model_object()->GetFunctions(NULL);
@@ -173,7 +173,7 @@ class Roles_Controller extends Controller
 						'user_id' => $user_id,
 						'function_id' => $function_id,
 						'access' => isset($_POST['function_'.$function_id]) ? 1 : 0,
-						);
+					);
 					$records[] = $record;
 				}
 
@@ -210,18 +210,18 @@ class Roles_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły roli',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń rolę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$users = $this->app->get_model_object()->GetAllUsers();
 				$functions = $this->app->get_model_object()->GetFunctions($id);
@@ -288,18 +288,18 @@ class Roles_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj rolę',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń rolę',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 

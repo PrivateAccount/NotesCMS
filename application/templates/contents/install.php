@@ -33,13 +33,13 @@ $main_template_content =
 			</td>
 			<td style="vertical-align: top; padding: 5px 0px 0px 10px;">
 				'
-					.$this->get_content().
+					. $this->get_content() .
 				'
 			</td>
 		</tr>
 	</table>
 '
 
-.$this->show_message();
+. $this->show_message();
 
 ?>

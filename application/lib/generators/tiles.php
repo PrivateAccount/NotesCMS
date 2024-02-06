@@ -41,19 +41,16 @@ class TilesBuilder extends Builder
 						
 		$paginator->init($base_link, $this->params['show_page'], $this->params['page_counter'], $this->params['page_band']);
 
-		$main_text .= '<div class="card card-default">';
-		$main_text .= '<div class="card-heading">';
 		$main_text .= '<h3 class="card-title">';
 		$main_text .= '<i class="'.$this->image.'"></i>';
 		$main_text .= '&nbsp; '.$this->title;
 		$main_text .= '</h3>';
-		$main_text .= '</div>';
 
 		$main_text .= '<table class="table">';
 
 		$main_text .= '<tr>';
 		$main_text .= '<td class="TableControlBar" style="text-align: right; border-top: none; border-bottom: 1px solid #ddd;">';
-		$main_text .= '<form style="display: inline-flex; margin: 0 0 0 2em;" action="index.php?route=' . MODULE_NAME . '&action=gallery" class="navbar-form" role="search" method="post">';
+		$main_text .= '<form style="display: inline-flex; margin: 0 2em 2em 0;" action="index.php?route=' . MODULE_NAME . '&action=gallery" class="navbar-form" role="search" method="post">';
 		$main_text .= '<input type="text" id="ListSearchText" name="ListSearchText" value="" class="form-control" />&nbsp;';
 		$main_text .= '<button type="submit" name="ListSearchButton" id="ListSearchButton" class="btn btn-success">Szukaj</button>';
 		$main_text .= '</form>';
@@ -118,17 +115,12 @@ class TilesBuilder extends Builder
 			$main_text .= '</tr>';
 		}
 
-		$main_text .= '</table>';
-		$main_text .= '<div class="card-footer">';
-		$main_text .= '<table width="100%">';
 		$main_text .= '<tr>';
 		$main_text .= '<td class="PaginatorCell">';
 		$main_text .= $paginator->show();
 		$main_text .= '</td>';
 		$main_text .= '</tr>';
 		$main_text .= '</table>';
-		$main_text .= '</div>';
-		$main_text .= '</div>';
 
 		return $main_text;
 	}

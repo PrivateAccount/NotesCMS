@@ -69,16 +69,14 @@ class Visitors
 			{
 				// tabela 'stat_main':
 
-				$query = "INSERT INTO stat_main (id, date, start, contact, admin, login, reset, statistics) 
-							VALUES 
+				$query = "INSERT INTO stat_main (id, date, start, contact, admin, login, reset, statistics) VALUES 
 							(NULL, '".$date_from."', 
 							(SELECT COUNT(*) from visitors WHERE request_uri IN ('/', '/index.php') AND visited BETWEEN '".$date_from."' AND '".$date_to."'), 
 							(SELECT COUNT(*) from visitors WHERE request_uri LIKE '%?route=contact' AND visited BETWEEN '".$date_from."' AND '".$date_to."'), 
 							(SELECT COUNT(*) from visitors WHERE request_uri LIKE '%?route=admin' AND visited BETWEEN '".$date_from."' AND '".$date_to."'), 
 							(SELECT COUNT(*) from visitors WHERE request_uri LIKE '%?route=login' AND visited BETWEEN '".$date_from."' AND '".$date_to."'), 
 							(SELECT COUNT(*) from visitors WHERE request_uri LIKE '%?route=password' AND visited BETWEEN '".$date_from."' AND '".$date_to."'),
-							(SELECT COUNT(*) from visitors WHERE request_uri LIKE '%?route=statistics' AND visited BETWEEN '".$date_from."' AND '".$date_to."')
-							)";
+							(SELECT COUNT(*) from visitors WHERE request_uri LIKE '%?route=statistics' AND visited BETWEEN '".$date_from."' AND '".$date_to."'))";
 
 				$statement = $this->db->prepare($query);
 

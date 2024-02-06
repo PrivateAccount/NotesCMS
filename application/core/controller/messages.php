@@ -10,7 +10,7 @@ class Messages_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Wiadomości',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',              'column_name' => 'Id',               'sorting' => 1),
@@ -43,23 +43,23 @@ class Messages_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Wiadomości nadesłane',
 					'icon' => 'img/category.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 					'caption' => 'Wiadomości zatwierdzone',
 					'icon' => 'img/checked.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=clear',
 					'caption' => 'Wyczyść wiadomości',
 					'icon' => 'img/trash.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -84,7 +84,7 @@ class Messages_Controller extends Controller
 			$record = array(
 				'requested' => 2,
 				'close_date' => date("Y-m-d H:i:s"),
-				);
+			);
 
 			$result = $this->app->get_model_object()->Save($id, $record);
 
@@ -176,18 +176,18 @@ class Messages_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=confirm&id='.$id,
 						'caption' => 'Zatwierdź wiadomość',
 						'icon' => 'img/checked.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń wiadomość',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 

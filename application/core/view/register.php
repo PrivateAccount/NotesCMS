@@ -15,7 +15,7 @@ class Register_View extends View
 
 		$form_title = 'Rejestracja';
 		$form_image = 'fas fa-user-plus';
-		$form_width = '300px';
+		$form_width = '400px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -28,33 +28,33 @@ class Register_View extends View
 				'caption' => 'Imię', 
 				'data' => array(
 					'type' => 'text', 'id' => 'name', 'name' => 'name', 'value' => NULL, 'required' => 'required', 'class' => 'focused',
-					),
 				),
+			),
 			array(
 				'caption' => 'Nazwisko', 
 				'data' => array(
 					'type' => 'text', 'id' => 'surname', 'name' => 'surname', 'value' => NULL, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Login', 
 				'data' => array(
 					'type' => 'text', 'id' => 'login', 'name' => 'login', 'value' => NULL, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'E-mail', 
 				'data' => array(
 					'type' => 'email', 'id' => 'email', 'name' => 'email', 'value' => NULL, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => 'Hasło', 
 				'data' => array(
 					'type' => 'password', 'id' => 'password', 'name' => 'password', 'value' => NULL, 'required' => 'required',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -65,8 +65,8 @@ class Register_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'submit', 'name' => 'submit', 'value' => 'Zapisz',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

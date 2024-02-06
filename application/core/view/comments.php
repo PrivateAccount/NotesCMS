@@ -64,7 +64,7 @@ class Comments_View extends View
 
 		$form_title = $data ? 'Edycja komentarza' : 'Nowy komentarz';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -79,15 +79,15 @@ class Comments_View extends View
 				'caption' => 'Id', 
 				'data' => array(
 					'type' => 'label', 'id' => 'id', 'name' => 'id', 'caption' => 'Id', 'value' => $main_id,
-					),
 				),
+			),
 			array(
 				'caption' => 'Treść', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'comment_content', 'name' => 'comment_content', 'rows' => 15, 'value' => $main_contents, 'required' => 'required', 'class' => 'focused',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -98,14 +98,14 @@ class Comments_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-				),
+			),
 			array(
 				'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-				),
+			),
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 
@@ -122,7 +122,7 @@ class Comments_View extends View
 
 		$view_title = 'Szczegóły komentarza';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -147,8 +147,8 @@ class Comments_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 

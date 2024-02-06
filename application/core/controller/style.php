@@ -10,7 +10,7 @@ class Style_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Styl',
-			));	
+		));	
 		
 		$this->required = array('contents');
 
@@ -50,7 +50,7 @@ class Style_Controller extends Controller
 				$record = array(
 					'filename' => $_POST['filename'],
 					'contents' => $_POST['contents'],
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -85,33 +85,33 @@ class Style_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=0',
 						'caption' => 'Index',
 						'icon' => 'img/home.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 						'caption' => 'Domyślny',
 						'icon' => 'img/checked.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 						'caption' => 'Rozszerzony',
 						'icon' => 'img/archive.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=3',
 						'caption' => 'Administracyjny',
 						'icon' => 'img/control_panel.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=reset',
 						'caption' => 'Resetuj',
 						'icon' => 'img/files.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route=admin',
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetContent($file);
 

@@ -132,7 +132,7 @@ class Page_View extends View
 
 		$form_title = 'Napisz komentarz';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -145,9 +145,9 @@ class Page_View extends View
 				'caption' => 'Treść', 
 				'data' => array(
 					'type' => 'textarea', 'id' => 'contents', 'name' => 'contents', 'rows' => 5, 'value' => NULL, 'required' => 'required', 'class' => 'focused',
-					),
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -158,8 +158,8 @@ class Page_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'submit', 'id' => 'submit', 'name' => 'submit', 'value' => 'Wyślij',
-				),
-			);
+			),
+		);
 		
 		$form_object->set_buttons($form_buttons);
 

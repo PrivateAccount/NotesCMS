@@ -90,7 +90,7 @@ class Images_View extends View
 
 		$form_title = $data ? 'Edycja obrazka' : 'Nowe obrazki';
 		$form_image = 'far fa-edit';
-		$form_width = '50%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -116,21 +116,21 @@ class Images_View extends View
 				'caption' => 'Podgląd', 
 				'data' => array(
 					'type' => 'label', 'value' => $main_cell,
-					),
 				),
+			),
 			array(
 				'caption' => 'Nazwa pliku', 
 				'data' => array(
 					'type' => 'text', 'id' => 'file_name', 'name' => 'file_name', 'value' => $main_file_name, 'required' => 'required',
-					),
 				),
+			),
 			array(
 				'caption' => $caption, 
 				'data' => array(
 					'type' => 'file', 'id' => 'upload_files', 'name' => 'upload_files[]', 'required' => $required, 'multiple' => $multiple,
-					),
 				),
-			);
+			),
+		);
 
 		if (!$data) { unset($form_inputs[0]); unset($form_inputs[1]); }
 
@@ -139,8 +139,8 @@ class Images_View extends View
 		$form_hiddens = array(
 			array(
 				'type' => 'hidden', 'id' => 'file_name', 'name' => 'file_name', 'value' => $main_file_name,
-				),
-			);
+			),
+		);
 
 		if ($data) unset($form_hiddens[0]);
 			
@@ -151,25 +151,25 @@ class Images_View extends View
 			$form_buttons = array(
 				array(
 					'type' => 'save', 'id' => 'save_button', 'name' => 'save_button', 'value' => 'Zapisz',
-					),
+				),
 				array(
 					'type' => 'close', 'id' => 'update_button', 'name' => 'update_button', 'value' => 'Zamknij',
-					),
+				),
 				array(
 					'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-					),
-				);
+				),
+			);
 		}
 		else // nowa pozycja
 		{
 			$form_buttons = array(
 				array(
 					'type' => 'submit', 'id' => 'upload_button', 'name' => 'upload_button', 'value' => 'Wyślij',
-					),
+				),
 				array(
 					'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Anuluj',
-					),
-				);
+				),
+			);
 		}
 	
 		$form_object->set_buttons($form_buttons);
@@ -187,7 +187,7 @@ class Images_View extends View
 
 		$view_title = 'Szczegóły obrazka';
 		$view_image = 'fas fa-info-circle';
-		$view_width = '50%';
+		$view_width = '500px';
 		
 		$view_object->init($view_title, $view_image, $view_width);
 
@@ -218,8 +218,8 @@ class Images_View extends View
 		$view_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 		
 		$view_object->set_buttons($view_buttons);
 
@@ -251,7 +251,7 @@ class Images_View extends View
 
 		$form_title = 'Przegląd obrazków';
 		$form_image = 'far fa-images';
-		$form_width = '70%';
+		$form_width = '500px';
 		
 		$form_object->init($form_title, $form_image, $form_width);
 
@@ -263,7 +263,7 @@ class Images_View extends View
 
 		$images[] = array(
 			'value' => NULL, 'caption' => 'Wybierz...', 
-			);
+		);
 
 		foreach ($import as $k => $v) 
 		{
@@ -274,7 +274,7 @@ class Images_View extends View
 			}
 			$images[] = array(
 				'value' => $id, 'caption' => $file_name, 
-				);
+			);
 		}
 
 		$form_inputs = array(
@@ -284,15 +284,15 @@ class Images_View extends View
 					'type' => 'select', 'id' => 'image_selector', 'name' => 'image_selector', 
 					'onchange' => 'ajax_load(\''. GALLERY_DIR . IMG_DIR .'\')',
 					'option' => $images, 
-					),
 				),
+			),
 			array(
 				'caption' => 'Podgląd', 
 				'data' => array(
-					'type' => 'label', 'value' => '<div id="image_container"><img id="image_item" src="img/ajax/blank.png" class="ListImage" style="width: 100%; height: 100%;" alt="blank" /></div>',
-					),
+					'type' => 'label', 'value' => '<div id="image_container"><img id="image_item" src="img/ajax/blank.png" class="ListImage" style="width: 100%; height: 100%; padding: 1px; border: 1px solid #ccc;" alt="blank" /></div>',
 				),
-			);
+			),
+		);
 
 		$form_object->set_inputs($form_inputs);
 		
@@ -303,8 +303,8 @@ class Images_View extends View
 		$form_buttons = array(
 			array(
 				'type' => 'cancel', 'id' => 'cancel_button', 'name' => 'cancel_button', 'value' => 'Zamknij',
-				),
-			);
+			),
+		);
 	
 		$form_object->set_buttons($form_buttons);
 

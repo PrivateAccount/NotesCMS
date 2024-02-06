@@ -9,7 +9,7 @@ class Statistics_Controller extends Controller
 		$this->app->get_page()->set_path(array(
 			'index.php' => 'Strona główna',
 			'index.php?route='.MODULE_NAME => 'Statystyki',
-			));
+		));
 	}
 
 	public function Index_Action()

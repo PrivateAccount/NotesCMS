@@ -2,37 +2,33 @@
  *  Własne style dla strony - szablon ADMIN
  */
 
-div.page-content { min-height: calc(100vh - 127px); }
+section.admin { padding: 1em; min-height: calc(100vh - 500px); }
+section.admin div.container { text-align: center; }
+section.admin div.AdminGroupName { color: #ccc; font-size: small; }
+section.admin div.AdminGroupElements { display: inline-block; }
+section.admin div.AdminGroupElements table { width: 100%; max-width: 1200px; padding: 1em; }
+section.admin div.AdminGroupElements table td.AdminGroupElement { width: 140px; vertical-align: top; }
+section.admin div.AdminGroupElements table td.AdminGroupElement p { font-size: smaller; }
 
-div.AdminGroupName { padding-top: 30px; margin: 10px; text-align: center; color: #999; }
-div.AdminGroupElements { padding: 0px 0px 0px 0px; }
-td.AdminGroupElement { width: 150px; padding: 10px; text-align: center; vertical-align: top; }
-td.AdminGroupElement > a > p { margin: 0px; padding: 0px; font-size: small; }
-td.AdminGroupElement > a { color: #777; }
-td.AdminGroupElement > a:hover  { color: #c00; text-decoration: none; }
+div.options-links { text-align: right; padding: 2em; }
+div.options-links span.options-item { text-align: center; margin: 1em; font-size: small; }
+div.options-links span.options-item img { margin: 0 5px; }
 
-div.message-bar { margin: 2em 0; }
+section.admin div.container table.table { width: 100%; font-size: small; }
+section.admin div.container table.table tr.HeaderRow {}
+section.admin div.container table.table tr.HeaderRow th.TitleCell { padding: 1em 0; border-bottom: 1px solid #ccc; }
+section.admin div.container table.table td.DataCell { padding: 1em 0; font-size: small; }
+section.admin div.container table.table td.ActionCell img { padding: 1em; }
+section.admin div.container table.table td.PaginatorCell { border-top: 1px solid #ccc; padding: 1em; }
+section.admin div.container table.table td.PaginatorCell div.counters { font-size: small; }
+section.admin div.container table.table td.PaginatorCell div.pages ul.pagination { display: inline-block; padding: 0; }
+section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item { display: inline; margin: 2px 1px; padding: 2px 20px; border: 1px solid #999; border-radius: 5px; font-size: larger; }
+section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item.active { background-color: #fed; }
+section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item.disabled { background-color: #eee; }
+section.admin div.container table.table td.PaginatorCell div.band { display: inline-block; }
+section.admin div.container table.table td.PaginatorCell div.skip { display: inline-block; }
 
-td.ViewKey { color: #777; padding-right: 10px; width: 20%; border-bottom: 1px dotted #eee; }
-td.ViewData { color: #333; padding-left: 10px; width: 80%; border-bottom: 1px dotted #eee; }
+table td img.ListImage { width: 100px; height: auto; }
 
-img.ListImage { width: 70px; height: 50px; padding: 1px; border: 1px solid #ddd; }
-span.gallery_item > a > img { margin: 5px; padding: 1px; border: 1px solid #ccc; width: 100px; height: 100px; }
-span.gallery_item > a > img:hover { cursor: pointer; border: 1px solid #00f; }
-
-div.options-links { margin: 2em 0; }
-span.options-item { float: right; padding: 0px 10px; margin: 0px 0px 20px 0px; }
-span.options-item > a > img { padding: 0px 10px 0px 0px; }
-
-div.radio > label > a { margin-left: 20px; }
-
-.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
-    border: 1px solid #aaa;
-}
-
-table.table-bordered th.TitleCell {
-    padding: 5px 10px;
-    background-color: #eee;
-}
-
-section.admin { min-height: calc(100vh - 312px); }
+table span.gallery_item { margin: 1em; }
+table span.gallery_item img { max-width: 200px; max-height: 200px; padding: 1px; border: 1px solid #ccc; }

@@ -10,7 +10,7 @@ class Config_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Konfiguracja',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',         'column_name' => 'Id',             'sorting' => 1),
@@ -42,13 +42,13 @@ class Config_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowy klucz',
 					'icon' => 'img/files.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -79,7 +79,7 @@ class Config_Controller extends Controller
 					'field_type' => $_POST['field_type'],
 					'active' => $_POST['active'],
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -114,8 +114,8 @@ class Config_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = NULL;
 
@@ -147,7 +147,7 @@ class Config_Controller extends Controller
 					'field_type' => $_POST['field_type'],
 					'active' => $_POST['active'],
 					'modified' => date("Y-m-d H:i:s"),
-					);
+				);
 
 				if (isset($_POST['save_button']))
 				{
@@ -182,18 +182,18 @@ class Config_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły klucza',
 						'icon' => 'img/info.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń klucz',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
@@ -257,18 +257,18 @@ class Config_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj klucz',
 						'icon' => 'img/edit.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń klucz',
 						'icon' => 'img/trash.png',
-						),
+					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 

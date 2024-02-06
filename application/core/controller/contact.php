@@ -9,7 +9,7 @@ class Contact_Controller extends Controller
 		$this->app->get_page()->set_path(array(
 			'index.php' => 'Strona główna',
 			'index.php?route='.MODULE_NAME => 'Kontakt z serwisem',
-			));
+		));
 
 		$this->required = array('login', 'email', 'contents');
 	}
@@ -35,7 +35,7 @@ class Contact_Controller extends Controller
 			'login' => isset($_POST['login']) ? $_POST['login'] : NULL,
 			'email' => isset($_POST['email']) ? $_POST['email'] : NULL,
 			'contents' => isset($_POST['contents']) ? $_POST['contents'] : NULL,
-			);
+		);
 
 		$message_options = array(
 			'send_new_message_report' => $this->app->get_settings()->get_config_key('send_new_message_report'),
@@ -49,7 +49,7 @@ class Contact_Controller extends Controller
 			'email_report_subject' => $this->app->get_settings()->get_config_key('email_report_subject'),
 			'email_report_body_1' => $this->app->get_settings()->get_config_key('email_report_body_1'),
 			'email_report_body_2' => $this->app->get_settings()->get_config_key('email_report_body_2'),
-			);
+		);
 
 		$sendme = isset($_POST['sendme']) ? TRUE : FALSE;
 		

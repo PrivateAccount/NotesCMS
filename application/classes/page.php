@@ -51,11 +51,11 @@ class Page
 	{
 		if (isset($_SESSION['install_mode']))
 		{
-			$logo = '<i class="'.PAGE_LOGO.'"></i>';
+			$logo = '<img src="'.PAGE_LOGO.'">';
 		}
 		else
 		{
-			$logo = '<i class="'.$this->app->get_settings()->get_config_key('logo_image').'"></i>';
+			$logo = '<img src="'.$this->app->get_settings()->get_config_key('logo_image').'">';
 		}
 		return $logo;
 	}
@@ -383,10 +383,6 @@ class Page
 			$result .= '</ul>';
 		}
 		
-		$result .= $this->get_search();
-		
-		$result .= $this->get_topbar();
-		
 		return $result;
 	}
 
@@ -498,7 +494,7 @@ class Page
 	{
 		$result = $this->app->get_settings()->get_config_key('page_footer');
 
-		$result .= '<p class="text-muted small mb-4 mb-lg-0">&copy; '.$this->get_metadata('company_name').' {_year_}. Wszystkie prawa zastrzeżone.</p>';
+		$result .= '<div class="copyright">&copy; '.$this->get_metadata('company_name').' {_year_}. Wszystkie prawa zastrzeżone.</div>';
 		
 		$result = str_replace('{_year_}', date("Y"), $result);
 
@@ -513,7 +509,7 @@ class Page
 		
 		$result = NULL;
 		
-		$result .= '<ul class="list-inline mb-0">';
+		$result .= '<ul class="list-socials">';
 		
 		if (is_array($object->{'links'}))
 		{
@@ -525,7 +521,7 @@ class Page
 					if ($key == 'icon') $icon = $value;
 					if ($key == 'link') $link = $value;
 				}
-				$result .= '<li class="list-inline-item">';
+				$result .= '<li class="list-socials-item">';
 				$result .= '<a href="'.$link.'" target="_blank">';
 				$result .= '<i class="'.$icon.' fa-2x fa-fw"></i>';
 				$result .= '</a>';

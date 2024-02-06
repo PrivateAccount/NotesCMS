@@ -49,7 +49,7 @@ class Dialog
 				break;
 		}
 
-		$main_dialog_body .= '<div class="card card-'. $alert_type .' center mt-5" style="width: 400px;">';
+		$main_dialog_body .= '<div class="card card-'. $alert_type .' center">';
 
 		$main_dialog_body .= '<div class="card-heading">';
 		$main_dialog_body .= '<h3 class="card-title">';
@@ -109,10 +109,6 @@ class Dialog
 		$main_dialog_body .= '<script>';
 		$main_dialog_body .= 'setTimeout(function() { $("#dialog_button_1").focus(); }, 500);';
 		$main_dialog_body .= '</script>';
-
-		$main_dialog_body .= '<style>';
-		$main_dialog_body .= 'section.content > div.container { padding: 165px 0 220px 0; }';
-		$main_dialog_body .= '</style>';
 		
 		return $main_dialog_body;
 	}

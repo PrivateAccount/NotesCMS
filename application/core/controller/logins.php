@@ -10,7 +10,7 @@ class Logins_Controller extends Controller
 			'index.php' => 'Strona główna',
 			'index.php?route=admin' => 'Admin Panel',
 			'index.php?route='.MODULE_NAME => 'Logowania',
-			));	
+		));	
 		
 		$columns = array(
 			array('db_name' => 'id',         'column_name' => 'Id',       'sorting' => 1),
@@ -42,18 +42,18 @@ class Logins_Controller extends Controller
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Logowania udane',
 					'icon' => 'img/success.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 					'caption' => 'Logowania nieudane',
 					'icon' => 'img/fail.png',
-					),
+				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
 					'icon' => 'img/stop.png',
-					),
-				);
+				),
+			);
 
 			$data = $this->app->get_model_object()->GetAll();
 
@@ -89,8 +89,8 @@ class Logins_Controller extends Controller
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
 						'icon' => 'img/stop.png',
-						),
-					);
+					),
+				);
 
 				$data = $this->app->get_model_object()->GetOne($id);
 
