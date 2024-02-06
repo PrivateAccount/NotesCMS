@@ -28,7 +28,7 @@ footer.footer div.container ul { display: inline-block; padding: 0; }
 footer.footer div.container ul li { display: inline; padding: 0 5px; font-size: smaller; }
 footer.footer div.container div.copyright { font-size: small; color: #999; }
 
-div.card { padding: 1em; margin: 1px; border: 1px solid #999; border-radius: 5px; width: 400px; }
+div.card { padding: 1em; margin: 2em 0 0 0; border: 1px solid #999; border-radius: 5px; width: 400px; }
 div.card div.card-heading { border-bottom: 1px solid #ccc; }
 div.card div.card-body { padding: 1em; font-size: smaller; }
 div.card div.card-footer { border-top: 1px solid #ccc; padding: 1em 0 0 0; }

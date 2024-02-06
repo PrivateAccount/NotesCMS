@@ -2,7 +2,7 @@
  *  Własne style dla strony - szablon ADMIN
  */
 
-section.admin { padding: 1em; min-height: calc(100vh - 500px); }
+section.admin { padding: 1em; min-height: calc(100vh - 387px); }
 section.admin div.container { text-align: center; }
 section.admin div.AdminGroupName { color: #ccc; font-size: small; }
 section.admin div.AdminGroupElements { display: inline-block; }
