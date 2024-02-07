@@ -21,10 +21,10 @@
 ### Installation:
 * create new empty database on hosting account
 * unpack ZIP and upload to hosting server to public_html folder
+* change folders attributes: chmod 777 -R gallery/ css/ js/ application/templates/ install/
 * write database connection parameters in config / config.php
 * open web page in the browser - URL: http://{your-domain}/
 * fill settings form and submit
-* change folders attributes: chmod 777 -R gallery/ css/ js/ application/templates/
 * that's all!
 
 ### Reset application:

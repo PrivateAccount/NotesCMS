@@ -481,15 +481,6 @@ class Page
 		return $this->selected;
 	}
 
-	public function get_aside()
-	{
-		if ($this->app->get_settings()->get_config_key('aside_panel_visible') != 'true') return NULL;
-
-		$result = $this->app->get_settings()->get_config_key('page_aside_content');
-		
-		return $result;
-	}
-
 	public function get_footer()
 	{
 		$result = $this->app->get_settings()->get_config_key('page_footer');
