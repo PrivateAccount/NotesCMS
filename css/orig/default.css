@@ -12,9 +12,10 @@ nav.navbar div.container a.navbar-brand { font-size: xxx-large; font-weight: bol
 nav.navbar div.container a.navbar-brand div.title { margin: -2em 1em 0 5em; padding: 4px; }
 nav.navbar div.container ul.nav { display: flex; padding: 2em; }
 nav.navbar div.container ul.nav li.nav-item { display: inline; padding: 0 1em; font-size: larger; font-weight: bold; }
-nav.navbar div.container ul.nav li.nav-selected { display: inline; padding: 0 1em; font-size: larger; font-weight: bold; border-bottom: 2px solid #090; }
+nav.navbar div.container ul.nav li.nav-selected { display: inline; padding: 0 1em; font-size: larger; font-weight: bold; background-color: #fed; }
+nav.navbar div.container ul.nav li.nav-selected a.nav-link { color: #c00; }
 
-section.content { padding: 1em; min-height: calc(100vh - 406px); }
+section.content { padding: 1em; min-height: calc(100vh - 407px); }
 section.content div.container { padding: 10px 0 10px 0; }
 section.content div.container div.article { padding: 0 1em; }
 section.content div.container div.article div.article-title { font-size: 1.75em; height: 1.75em; }
@@ -44,11 +45,11 @@ div.form-group input[type="text"], div.form-group input[type="email"], div.form-
 div.form-group textarea { width: 100%; min-width: 100%; max-width: 100%; min-height: 50px; padding: 2px; border: 1px solid #999; }
 div.form-group select { width: 100%; padding: 2px; border: 1px solid #999; }
 
-div.message-bar { max-width: 800px; margin-left: auto; margin-right: auto; }
+div.message-bar { max-width: 800px; margin-left: auto; margin-right: auto; margin-top: 2em; }
 td.MsgIcon { vertical-align: top; }
 td.MsgMessage { text-align: left; padding: 0 0 1em 2em; }
 
-div.alert { margin: 1em 0 0 0; border-radius: 4px; padding: 1em; font-size: smaller; }
+div.alert { margin: 1em 0 0 0; border-radius: 4px; padding: 1em; font-size: smaller; text-align: center; }
 div.alert-info { background-color: #def; color: #369; }
 div.alert-success { background-color: #6c6; color: #060; }
 div.alert-danger { background-color: #fcc; color: #c00; }

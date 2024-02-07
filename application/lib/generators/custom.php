@@ -246,7 +246,7 @@ class CustomBuilder extends Builder
 			// customowe kolumny:
 
 			$main_text .= '<tr class="' . $class_name . '">';
-			$main_text .= '<td colspan="'. count($active_fields) .'" class="'. $data_class_name .'" style="text-align: '. $this->attribs[$custom]['align'] .'; padding: 1em 10em; border-bottom: 1px dotted #ccc;">'. $custom_text .'</td>';
+			$main_text .= '<td colspan="'. count($active_fields) .'" class="'. $data_class_name .'" style="text-align: '. $this->attribs[$custom]['align'] .'; padding: 1em 20em; border-bottom: 1px dotted #ccc;">'. $this->get_split_text(strip_tags($custom_text), 64) .'</td>';
 			$main_text .= '</tr>';
 		}
 

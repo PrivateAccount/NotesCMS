@@ -2,7 +2,7 @@
  *  Własne style dla strony - szablon ADMIN
  */
 
-section.admin { padding: 1em; min-height: calc(100vh - 387px); }
+section.admin { padding: 1em; min-height: calc(100vh - 390px); }
 section.admin div.container { text-align: center; }
 section.admin div.AdminGroupName { color: #ccc; font-size: small; }
 section.admin div.AdminGroupElements { display: inline-block; }
@@ -14,7 +14,7 @@ div.options-links { text-align: right; padding: 0; margin: -2em 1em 0 0; }
 div.options-links span.options-item { text-align: center; margin: 1em; font-size: small; }
 div.options-links span.options-item img { margin: 0 5px; }
 
-section.admin div.container table.table { width: 100%; font-size: small; }
+section.admin div.container table.table { font-size: small; }
 section.admin div.container table.table td.TableHeadingBar { font-size: large; }
 section.admin div.container table.table tr.HeaderRow { font-size: larger; }
 section.admin div.container table.table tr.HeaderRow th.TitleCell { padding: 1em 0; border-bottom: 1px solid #ccc; }
@@ -29,10 +29,10 @@ section.admin div.container table.table td.PaginatorCell div.pages ul.pagination
 section.admin div.container table.table td.PaginatorCell div.band { display: inline-block; }
 section.admin div.container table.table td.PaginatorCell div.skip { display: inline-block; }
 
-table td img.ListImage { width: 100px; height: auto; }
-
-table span.gallery_item { margin: 1em; }
-table span.gallery_item img { max-width: 200px; max-height: 200px; padding: 1px; border: 1px solid #ccc; }
+section.admin div.container table.table-bordered { width: 1400px; margin-left: auto; margin-right: auto; }
+section.admin div.container table.table-bordered td img.ListImage { width: 100px; height: auto; }
+section.admin div.container table.table-bordered span.gallery_item { margin: 1em; }
+section.admin div.container table.table-bordered span.gallery_item img { max-width: 200px; max-height: 200px; padding: 1px; border: 1px solid #ccc; }
 
 div.card td.ViewKey { width: 20%; }
 div.card td.ViewData { width: 80%; }

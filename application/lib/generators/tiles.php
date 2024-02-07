@@ -46,7 +46,7 @@ class TilesBuilder extends Builder
 		$main_text .= '&nbsp; '.$this->title;
 		$main_text .= '</h3>';
 
-		$main_text .= '<table class="table">';
+		$main_text .= '<table class="table table-bordered">';
 
 		$main_text .= '<tr>';
 		$main_text .= '<td class="TableControlBar" style="text-align: right; border-top: none; border-bottom: 1px solid #ddd;">';

@@ -14,9 +14,7 @@ $main_template_content = '
 		</tr>
 		<tr>
 			<td>
-				'
-					. $this->get_content() .
-				'
+				' . $this->get_content() . '
 			</td>
 		</tr>
 	</table>
