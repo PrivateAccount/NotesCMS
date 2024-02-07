@@ -60,7 +60,7 @@ define ('CATEGORIES', 2);  // menu boczne
  */
  
 /* Before database starts: */
-define ('PAGE_LOGO', 'fas fa-user-cog');     // main logo
+define ('PAGE_LOGO', 'gallery/logo/2');      // main logo
 define ('PAGE_TITLE', 'FineCMS');            // main title
 define ('PAGE_SUBTITLE', 'Ultra Lite CMS');  // main subtitle
 
