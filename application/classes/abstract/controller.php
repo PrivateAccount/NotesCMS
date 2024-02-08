@@ -113,6 +113,7 @@ class Controller
 		if (isset($_GET['confirm']))
 		{
 			$_SESSION['page_pointer'] = 0;
+			$_SESSION['starting_position'] = 0;
 		}
 	}
 
@@ -121,6 +122,7 @@ class Controller
 		if (isset($_GET['confirm']))
 		{
 			$_SESSION['page_pointer'] = 0;
+			$_SESSION['starting_position'] = 0;
 		}
 	}
 
