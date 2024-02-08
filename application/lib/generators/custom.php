@@ -235,7 +235,7 @@ class CustomBuilder extends Builder
 						if ($key == 'icon') $icon = $value;
 						if ($key == 'title') $title = $value;
 					}
-					$main_text .= '<a href="index.php?route=' . MODULE_NAME . '&action=' . $action . '&id=' . $row['id'] . '"><img src="img/16x16/' . $icon . '" class="ActionIcon" alt="' . $title . '" title="' . $title . '" /></a>';
+					$main_text .= '<a href="index.php?route=' . MODULE_NAME . '&action=' . $action . '&id=' . $row['id'] . '"><i class="' . $icon . '" title="' . $title . '"></i></a>';
 				}
 								
 				$main_text .= '</td>';

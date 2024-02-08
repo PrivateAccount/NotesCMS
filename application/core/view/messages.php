@@ -25,10 +25,10 @@ class Messages_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',    'title' => 'Podgląd'),
-			array('action' => 'confirm', 'icon' => 'checked.png', 'title' => 'Zatwierdź'),
-			array('action' => 'delete',  'icon' => 'trash.png',   'title' => 'Usuń'),
-			array('action' => 'exclude',  'icon' => 'remove.png',   'title' => 'Blokuj'),
+			array('action' => 'view',    'icon' => 'fas fa-info-circle',  'title' => 'Podgląd'),
+			array('action' => 'confirm', 'icon' => 'fas fa-check-circle', 'title' => 'Zatwierdź'),
+			array('action' => 'delete',  'icon' => 'fas fa-trash-alt',    'title' => 'Usuń'),
+			array('action' => 'exclude', 'icon' => 'fas fa-times-circle', 'title' => 'Blokuj'),
 		);
 	
 		include GENER_DIR . 'custom.php';

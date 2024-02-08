@@ -29,11 +29,11 @@ class Categories_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'up',     'icon' => 'move_up.png',   'title' => 'Wyżej'),
-			array('action' => 'down',   'icon' => 'move_down.png', 'title' => 'Niżej'),
-			array('action' => 'view',   'icon' => 'info.png',      'title' => 'Podgląd'),
-			array('action' => 'edit',   'icon' => 'edit.png',      'title' => 'Edytuj'),
-			array('action' => 'delete', 'icon' => 'trash.png',     'title' => 'Usuń'),
+			array('action' => 'up',     'icon' => 'fas fa-arrow-circle-up',   'title' => 'Wyżej'),
+			array('action' => 'down',   'icon' => 'fas fa-arrow-circle-down', 'title' => 'Niżej'),
+			array('action' => 'view',   'icon' => 'fas fa-info-circle',       'title' => 'Podgląd'),
+			array('action' => 'edit',   'icon' => 'fas fa-edit',              'title' => 'Edytuj'),
+			array('action' => 'delete', 'icon' => 'fas fa-trash-alt',         'title' => 'Usuń'),
 		);
 	
 		$sections = array(1 => 'navi', 2 => 'side');

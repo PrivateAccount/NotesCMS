@@ -22,8 +22,8 @@ class Visitors_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',         'title' => 'Podgląd'),
-			array('action' => 'exclude', 'icon' => 'sheet_export.png', 'title' => 'Wyklucz'),
+			array('action' => 'view',    'icon' => 'fas fa-info-circle',  'title' => 'Podgląd'),
+			array('action' => 'exclude', 'icon' => 'fas fa-times-circle', 'title' => 'Wyklucz'),
 		);
 	
 		include GENER_DIR . 'list.php';

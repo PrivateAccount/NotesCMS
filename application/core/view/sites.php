@@ -28,11 +28,11 @@ class Sites_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',     'title' => 'Podgląd'),
-			array('action' => 'edit',    'icon' => 'edit.png',     'title' => 'Edytuj'),
-			array('action' => 'archive', 'icon' => 'archiver.png', 'title' => 'Archiwizuj'),
-			array('action' => 'restore', 'icon' => 'archives.png', 'title' => 'Przywróć'),
-			array('action' => 'delete',  'icon' => 'trash.png',    'title' => 'Usuń'),
+			array('action' => 'view',    'icon' => 'fas fa-info-circle',    'title' => 'Podgląd'),
+			array('action' => 'edit',    'icon' => 'fas fa-edit',           'title' => 'Edytuj'),
+			array('action' => 'archive', 'icon' => 'fas fa-file-archive',   'title' => 'Archiwizuj'),
+			array('action' => 'restore', 'icon' => 'fas fa-window-restore', 'title' => 'Przywróć'),
+			array('action' => 'delete',  'icon' => 'fas fa-trash-alt',      'title' => 'Usuń'),
 		);
 
 		foreach ($data as $k => $v)

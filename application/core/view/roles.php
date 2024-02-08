@@ -13,18 +13,18 @@ class Roles_View extends View
 		$image = 'fas fa-user-tag';
 
 		$attribs = array(
-			array('width' => '10%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '15%', 'align' => 'left', 'visible' => '1', 'image' => '1'),
-			array('width' => '20%', 'align' => 'left', 'visible' => '1'),
-			array('width' => '10%', 'align' => 'left', 'visible' => '1'),
-			array('width' => '30%', 'align' => 'left', 'visible' => '1'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '15%', 'align' => 'left',   'visible' => '1', 'image' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '10%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '30%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 		);
 		
 		$actions = array(
-			array('action' => 'view',   'icon' => 'info.png',  'title' => 'Podgląd'),
-			array('action' => 'edit',   'icon' => 'edit.png',  'title' => 'Edytuj'),
-			array('action' => 'delete', 'icon' => 'trash.png', 'title' => 'Usuń'),
+			array('action' => 'view',   'icon' => 'fas fa-info-circle', 'title' => 'Podgląd'),
+			array('action' => 'edit',   'icon' => 'fas fa-edit',        'title' => 'Edytuj'),
+			array('action' => 'delete', 'icon' => 'fas fa-trash-alt',   'title' => 'Usuń'),
 		);
 	
 		foreach ($data as $k => $v)

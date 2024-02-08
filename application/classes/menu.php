@@ -81,10 +81,10 @@ class Menu
 	public function SetSkipNode($id, $elements)
 	{
 		$this->skip_bar[] = array(
-				'id' => $id,
-				'link' => $elements['link'],
-				'caption' => $elements['caption'],
-			);
+			'id' => $id,
+			'link' => $elements['link'],
+			'caption' => $elements['caption'],
+		);
 	}
 
 	public function GetSkipBar($id)

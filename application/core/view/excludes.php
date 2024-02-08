@@ -21,8 +21,8 @@ class Excludes_View extends View
 		);
 	
 		$actions = array(
-			array('action' => 'activate', 'icon' => 'checked.png', 'title' => 'Aktywuj'),
-			array('action' => 'delete', 'icon' => 'trash.png', 'title' => 'Usuń'),
+			array('action' => 'activate', 'icon' => 'fas fa-check-circle', 'title' => 'Aktywuj'),
+			array('action' => 'delete',   'icon' => 'fas fa-trash-alt',    'title' => 'Usuń'),
 		);
 	
 		include GENER_DIR . 'list.php';

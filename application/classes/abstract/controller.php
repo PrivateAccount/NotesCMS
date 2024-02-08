@@ -37,8 +37,8 @@ class Controller
 			array(
 				array('link' => 'index.php?route=login', 'caption' => 'Zaloguj', 'onclick' => NULL),
 				array('link' => 'index.php', 'caption' => 'Anuluj', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}
@@ -55,8 +55,8 @@ class Controller
 			'Wszyscy użytkownicy już mają przypisaną rolę. Aby dodać dla użytkownika nową rolę, najpierw usuń istniejącą.',
 			array(
 				array('link' => 'index.php?route=' . MODULE_NAME, 'caption' => 'Anuluj', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}
@@ -138,8 +138,8 @@ class Controller
 				'link' => 'index.php?route='.MODULE_NAME,
 				'caption' => 'Zamknij',
 				'icon' => 'img/stop.png',
-				),
-			);
+			),
+		);
 
 		$this->app->get_page()->set_options($options);
 
@@ -150,8 +150,8 @@ class Controller
 			array(
 				array('link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id.'&confirm=yes', 'caption' => 'Skasuj', 'onclick' => NULL),
 				array('link' => 'index.php?route='.MODULE_NAME, 'caption' => 'Anuluj', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}
@@ -163,8 +163,8 @@ class Controller
 				'link' => 'index.php?route='.MODULE_NAME,
 				'caption' => 'Zamknij',
 				'icon' => 'img/stop.png',
-				),
-			);
+			),
+		);
 
 		$this->app->get_page()->set_options($options);
 
@@ -175,8 +175,8 @@ class Controller
 			array(
 				array('link' => 'index.php?route='.MODULE_NAME.'&action=clear&&confirm=yes', 'caption' => 'Skasuj', 'onclick' => NULL),
 				array('link' => 'index.php?route='.MODULE_NAME, 'caption' => 'Anuluj', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}
@@ -188,8 +188,8 @@ class Controller
 				'link' => 'index.php?route='.MODULE_NAME,
 				'caption' => 'Zamknij',
 				'icon' => 'img/stop.png',
-				),
-			);
+			),
+		);
 
 		$this->app->get_page()->set_options($options);
 
@@ -200,8 +200,8 @@ class Controller
 			array(
 				array('link' => 'index.php?route='.MODULE_NAME.'&action=reset&confirm=yes', 'caption' => 'Resetuj', 'onclick' => NULL),
 				array('link' => 'index.php?route='.MODULE_NAME, 'caption' => 'Anuluj', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}
@@ -229,8 +229,8 @@ class Controller
 			'Żądanie nie może zostać obsłużone. Proszę sprawdzić poprawność adresu wywołania.',
 			array(
 				array('link' => 'index.php', 'caption' => 'Zamknij', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}
@@ -243,8 +243,8 @@ class Controller
 			'Żądanie nie może zostać obsłużone. Proszę sprawdzić poprawność adresu wywołania.',
 			array(
 				array('link' => 'index.php', 'caption' => 'Zamknij', 'onclick' => NULL),
-				)
-			);
+			)
+		);
 
 		$this->app->get_page()->set_content($this->app->get_view_object()->ShowDialog());
 	}

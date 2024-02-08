@@ -26,11 +26,11 @@ class Images_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'preview',  'icon' => 'image_size.png', 'title' => 'Podgląd'),
-			array('action' => 'view',     'icon' => 'info.png',       'title' => 'Szczegóły'),
-			array('action' => 'edit',     'icon' => 'edit.png',       'title' => 'Edytuj'),
-			array('action' => 'download', 'icon' => 'save.png',       'title' => 'Pobierz'),
-			array('action' => 'delete',   'icon' => 'trash.png',      'title' => 'Usuń'),
+			array('action' => 'preview',  'icon' => 'fas fa-camera',             'title' => 'Podgląd'),
+			array('action' => 'view',     'icon' => 'fas fa-info-circle',        'title' => 'Szczegóły'),
+			array('action' => 'edit',     'icon' => 'fas fa-edit',               'title' => 'Edytuj'),
+			array('action' => 'download', 'icon' => 'fas fa-cloud-download-alt', 'title' => 'Pobierz'),
+			array('action' => 'delete',   'icon' => 'fas fa-trash-alt',          'title' => 'Usuń'),
 		);
 	
 		foreach ($data as $k => $v)

@@ -24,11 +24,11 @@ class Comments_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',   'title' => 'Podgląd'),
-			array('action' => 'edit',    'icon' => 'edit.png',   'title' => 'Edytuj'),
-			array('action' => 'confirm', 'icon' => 'accept.png', 'title' => 'Zatwierdź'),
-			array('action' => 'disable', 'icon' => 'remove.png', 'title' => 'Zablokuj'),
-			array('action' => 'delete',  'icon' => 'trash.png',  'title' => 'Usuń'),
+			array('action' => 'view',    'icon' => 'fas fa-info-circle',  'title' => 'Podgląd'),
+			array('action' => 'edit',    'icon' => 'fas fa-edit',         'title' => 'Edytuj'),
+			array('action' => 'confirm', 'icon' => 'fas fa-check-circle', 'title' => 'Zatwierdź'),
+			array('action' => 'disable', 'icon' => 'fas fa-times-circle', 'title' => 'Zablokuj'),
+			array('action' => 'delete',  'icon' => 'fas fa-trash-alt',    'title' => 'Usuń'),
 		);
 	
 		include GENER_DIR . 'list.php';

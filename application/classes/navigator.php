@@ -156,7 +156,7 @@ class ListNavigator
 			'record_object' => $db_fields,
 			'db_params' => $db_params,
 			'list_params' => $list_params, 
-			);
+		);
 	}
 	
 	public function set_paginator($count)

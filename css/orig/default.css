@@ -23,6 +23,12 @@ section.content div.container div.article div.article-timestamp { display: flex;
 section.content div.container div.article div.article-timestamp img { margin: 0 1em 0 2em; }
 section.content div.container div.article div.article-content { margin: 2em 0; }
 
+section.content div.container div.article-comments-title { margin: 2em; padding-top: 2em; border-top: 1px solid #ccc; font-size: medium; font-weight: bold; }
+section.content div.container div.article-comments-list { margin: 0 2em; }
+section.content div.container div.article-comments-list div.article-comments-header { display: flex; font-size: small; padding: 0; }
+section.content div.container div.article-comments-list div.article-comments-header img { margin: 0 1em 0 2em; }
+section.content div.container div.article-comments-list div.article-comments-content { font-size: small; padding: 0 2em 1em 2em; }
+
 footer.footer { display: block; margin-top: 1em; padding-top: 1em; border-top: 1px solid #ccc; }
 footer.footer div.container { text-align: center; }
 footer.footer div.container ul { display: inline-block; padding: 0; }

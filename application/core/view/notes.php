@@ -22,9 +22,9 @@ class Notes_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',     'title' => 'Podgląd'),
-			array('action' => 'edit',    'icon' => 'edit.png',     'title' => 'Edytuj'),
-			array('action' => 'delete',  'icon' => 'trash.png',    'title' => 'Usuń'),
+			array('action' => 'view',   'icon' => 'fas fa-info-circle', 'title' => 'Podgląd'),
+			array('action' => 'edit',   'icon' => 'fas fa-edit',        'title' => 'Edytuj'),
+			array('action' => 'delete', 'icon' => 'fas fa-trash-alt',   'title' => 'Usuń'),
 		);
 	
 		include GENER_DIR . 'list.php';

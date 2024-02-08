@@ -21,18 +21,18 @@ class Pages_View extends View
 			array('width' => '25%', 'align' => 'left',   'visible' => '0'),
 			array('width' => '35%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '5%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '0'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '15%', 'align' => 'center', 'visible' => '1'),
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',     'title' => 'Podgląd'),
-			array('action' => 'edit',    'icon' => 'edit.png',     'title' => 'Edytuj'),
-			array('action' => 'archive', 'icon' => 'archiver.png', 'title' => 'Archiwizuj'),
-			array('action' => 'restore', 'icon' => 'archives.png', 'title' => 'Przywróć'),
-			array('action' => 'delete',  'icon' => 'trash.png',    'title' => 'Usuń'),
+			array('action' => 'view',    'icon' => 'fas fa-info-circle',    'title' => 'Podgląd'),
+			array('action' => 'edit',    'icon' => 'fas fa-edit',           'title' => 'Edytuj'),
+			array('action' => 'archive', 'icon' => 'fas fa-file-archive',   'title' => 'Archiwizuj'),
+			array('action' => 'restore', 'icon' => 'fas fa-window-restore', 'title' => 'Przywróć'),
+			array('action' => 'delete',  'icon' => 'fas fa-trash-alt',      'title' => 'Usuń'),
 		);
 	
 		include GENER_DIR . 'list.php';

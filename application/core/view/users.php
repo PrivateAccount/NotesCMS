@@ -15,24 +15,24 @@ class Users_View extends View
 		$attribs = array(
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'left',   'visible' => '1', 'image' => '1'),
-			array('width' => '10%',  'align' => 'left',   'visible' => '0'),
+			array('width' => '10%', 'align' => 'left',   'visible' => '0'),
 			array('width' => '10%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '10%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '25%', 'align' => 'left', 'visible' => '1'),
-			array('width' => '5%',  'align' => 'left', 'visible' => '1'),
+			array('width' => '25%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '5%',  'align' => 'left',   'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
-			array('width' => '5%', 'align' => 'center', 'visible' => '1'),
-			array('width' => '5%', 'align' => 'center', 'visible' => '0'),
-			array('width' => '5%', 'align' => 'center', 'visible' => '0'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
+			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
 			array('width' => '15%', 'align' => 'center', 'visible' => '1'),
 		);
 		
 		$actions = array(
-			array('action' => 'view',    'icon' => 'info.png',   'title' => 'Podgląd'),
-			array('action' => 'edit',    'icon' => 'edit.png',   'title' => 'Edytuj'),
-			array('action' => 'setpass', 'icon' => 'access.png', 'title' => 'Hasło'),
-			array('action' => 'delete',  'icon' => 'trash.png',  'title' => 'Usuń'),
+			array('action' => 'view',    'icon' => 'fas fa-info-circle', 'title' => 'Podgląd'),
+			array('action' => 'edit',    'icon' => 'fas fa-edit',        'title' => 'Edytuj'),
+			array('action' => 'setpass', 'icon' => 'fas fa-key',         'title' => 'Hasło'),
+			array('action' => 'delete',  'icon' => 'fas fa-trash-alt',   'title' => 'Usuń'),
 		);
 	
 		$group_names = array('Guest', 'Admin', 'Operator', 'User');

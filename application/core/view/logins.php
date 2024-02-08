@@ -24,7 +24,7 @@ class Logins_View extends View
 		);
 		
 		$actions = array(
-			array('action' => 'view', 'icon' => 'info.png', 'title' => 'Podgląd'),
+			array('action' => 'view', 'icon' => 'fas fa-info-circle', 'title' => 'Podgląd'),
 		);
 	
 		include GENER_DIR . 'list.php';
