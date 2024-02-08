@@ -236,7 +236,7 @@ class Images_View extends View
 		{
 			$id = isset($data['id']) ? $data['id'] : NULL;
 			
-			$result .= '<img src="' . GALLERY_DIR . IMG_DIR . $id.'" alt="ico" width="100%" style="border: 1px solid #ccc; padding: 1px;" />';
+			$result .= '<p><img src="' . GALLERY_DIR . IMG_DIR . $id.'" alt="ico" width="100%" style="border: 1px solid #ccc; padding: 1px;" /></p>';
 			$result .= '<p>' . 'Image ' . $data['id'] . '. <b>' . $data['file_name'] . '</b> (' . $data['user_login'] . ' @ ' . $data['modified'] . ')' . '</p>';
 		}
 

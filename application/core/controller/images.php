@@ -380,7 +380,7 @@ class Images_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zarządzanie galerią',
-					'icon' => 'fas fa-plus-circle',
+					'icon' => 'fas fa-file-image',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=gallery',
@@ -437,7 +437,7 @@ class Images_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zarządzanie galerią',
-					'icon' => 'fas fa-plus-circle',
+					'icon' => 'fas fa-file-image',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=load',

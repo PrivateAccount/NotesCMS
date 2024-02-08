@@ -84,7 +84,7 @@ class FormBuilder extends Builder
 
 		$main_text .= '<form id="generator-form" action="'. $this->action .'" method="post" '.$this->enctype.' role="form">';
 
-		$main_text .= '<div class="card left" style="width: '. $this->width .';">';
+		$main_text .= '<div class="card card-default left" style="width: '. $this->width .';">';
 
 		$main_text .= '<div class="card-heading">';
 		$main_text .= '<h3 class="card-title">';
