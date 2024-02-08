@@ -117,7 +117,7 @@ class Page
 		
 		if (count($this->options))
 		{
-			foreach (array_reverse($this->options) as $k => $v)
+			foreach ($this->options as $k => $v)
 			{
 				foreach ($v as $key => $value)
 				{
