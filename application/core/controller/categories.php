@@ -48,22 +48,22 @@ class Categories_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowa kategoria',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Nawigacja górna',
-					'icon' => 'img/top_menu.png',
+					'icon' => 'fas fa-arrow-circle-up',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 					'caption' => 'Nawigacja boczna',
-					'icon' => 'img/left_menu.png',
+					'icon' => 'fas fa-arrow-circle-left',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -135,7 +135,7 @@ class Categories_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -212,22 +212,22 @@ class Categories_Controller extends Controller
 					array(
 						'link' => 'index.php?route=pages&action=edit&id='.$page_id,
 						'caption' => 'Edytuj stronę',
-						'icon' => 'img/category.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły kategorii',
-						'icon' => 'img/info.png',
+						'icon' => 'fas fa-info-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń kategorię',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -296,17 +296,17 @@ class Categories_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj kategorię',
-						'icon' => 'img/edit.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń kategorię',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

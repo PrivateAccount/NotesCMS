@@ -45,12 +45,12 @@ class Pages_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowa strona',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -120,12 +120,12 @@ class Pages_Controller extends Controller
 					array(
 						'link' => 'index.php?route=images&action=gallery',
 						'caption' => 'Wstaw obrazek',
-						'icon' => 'img/link.png',
+						'icon' => 'fas fa-link',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -204,37 +204,37 @@ class Pages_Controller extends Controller
 					array(
 						'link' => 'index.php?route=images&action=gallery',
 						'caption' => 'Wstaw obrazek',
-						'icon' => 'img/link.png',
+						'icon' => 'fas fa-link',
 					),
 					array(
 						'link' => 'index.php?route=categories&action=edit&id='.$category_id,
 						'caption' => 'Edytuj kategorię',
-						'icon' => 'img/category.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły strony',
-						'icon' => 'img/info.png',
+						'icon' => 'fas fa-info-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=archive&id='.$id,
 						'caption' => 'Archiwizuj stronę',
-						'icon' => 'img/archive.png',
+						'icon' => 'fas fa-file-archive',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=restore&id='.$id,
 						'caption' => 'Przywróć stronę',
-						'icon' => 'img/archives.png',
+						'icon' => 'fas fa-window-restore',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń stronę',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -307,27 +307,27 @@ class Pages_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj stronę',
-						'icon' => 'img/edit.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=archive&id='.$id,
 						'caption' => 'Archiwizuj stronę',
-						'icon' => 'img/archive.png',
+						'icon' => 'fas fa-file-archive',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=restore&id='.$id,
 						'caption' => 'Przywróć stronę',
-						'icon' => 'img/archives.png',
+						'icon' => 'fas fa-window-restore',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń stronę',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -398,22 +398,22 @@ class Pages_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły strony',
-						'icon' => 'img/info.png',
+						'icon' => 'fas fa-info-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj stronę',
-						'icon' => 'img/edit.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń stronę',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

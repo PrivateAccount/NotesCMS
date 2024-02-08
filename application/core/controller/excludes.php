@@ -39,12 +39,12 @@ class Excludes_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowy adres',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route=visitors',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -97,7 +97,7 @@ class Excludes_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

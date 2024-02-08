@@ -37,12 +37,12 @@ class Visitors_Controller extends Controller
 				array(
 					'link' => 'index.php?route=excludes',
 					'caption' => 'Wykluczenia',
-					'icon' => 'img/rejected.png',
+					'icon' => 'fas fa-times-circle',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -79,12 +79,12 @@ class Visitors_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=exclude&id='.$id,
 						'caption' => 'Wyklucz adres',
-						'icon' => 'img/table_export.png',
+						'icon' => 'fas fa-times-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

@@ -41,17 +41,17 @@ class Comments_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=0',
 					'caption' => 'Komentarze nadesłane',
-					'icon' => 'img/category.png',
+					'icon' => 'fas fa-edit',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Komentarze zatwierdzone',
-					'icon' => 'img/checked.png',
+					'icon' => 'fas fa-check-circle',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -124,27 +124,27 @@ class Comments_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=confirm&id='.$id,
 						'caption' => 'Zatwierdź komentarz',
-						'icon' => 'img/accept.png',
+						'icon' => 'fas fa-check-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=disable&id='.$id,
 						'caption' => 'Zablokuj komentarz',
-						'icon' => 'img/remove.png',
+						'icon' => 'fas fa-times-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Podgląd komentarza',
-						'icon' => 'img/info.png',
+						'icon' => 'fas fa-info-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń komentarz',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -266,27 +266,27 @@ class Comments_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=confirm&id='.$id,
 						'caption' => 'Zatwierdź komentarz',
-						'icon' => 'img/accept.png',
+						'icon' => 'fas fa-check-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=disable&id='.$id,
 						'caption' => 'Zablokuj komentarz',
-						'icon' => 'img/remove.png',
+						'icon' => 'fas fa-times-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj komentarz',
-						'icon' => 'img/edit.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń komentarz',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

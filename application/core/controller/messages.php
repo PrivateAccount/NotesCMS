@@ -42,22 +42,22 @@ class Messages_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Wiadomości nadesłane',
-					'icon' => 'img/category.png',
+					'icon' => 'fas fa-edit',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 					'caption' => 'Wiadomości zatwierdzone',
-					'icon' => 'img/checked.png',
+					'icon' => 'fas fa-check-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=clear',
 					'caption' => 'Wyczyść wiadomości',
-					'icon' => 'img/trash.png',
+					'icon' => 'fas fa-trash-alt',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -175,17 +175,17 @@ class Messages_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=confirm&id='.$id,
 						'caption' => 'Zatwierdź wiadomość',
-						'icon' => 'img/checked.png',
+						'icon' => 'fas fa-check-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń wiadomość',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

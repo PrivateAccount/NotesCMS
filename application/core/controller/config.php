@@ -41,12 +41,12 @@ class Config_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowy klucz',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -113,7 +113,7 @@ class Config_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -181,17 +181,17 @@ class Config_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły klucza',
-						'icon' => 'img/info.png',
+						'icon' => 'fas fa-info-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń klucz',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -256,17 +256,17 @@ class Config_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj klucz',
-						'icon' => 'img/edit.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń klucz',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

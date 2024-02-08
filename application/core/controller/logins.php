@@ -41,17 +41,17 @@ class Logins_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 					'caption' => 'Logowania udane',
-					'icon' => 'img/success.png',
+					'icon' => 'fas fa-check-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 					'caption' => 'Logowania nieudane',
-					'icon' => 'img/fail.png',
+					'icon' => 'fas fa-times-circle',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -88,7 +88,7 @@ class Logins_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 

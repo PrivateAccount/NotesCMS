@@ -125,7 +125,7 @@ class Page
 					if ($key == 'caption') $caption = $value;
 					if ($key == 'icon') $icon = $value;
 				}
-				$items .= '<span class="options-item"><a href="'. $link .'"><img src="'. $icon .'" alt="'. $caption .'" />'. $caption .'</a></span>';
+				$items .= '<span class="options-item"><a href="'. $link .'"><i class="'. $icon .'"></i>'. $caption .'</a></span>';
 			}
 			if ($show_border)
 			{

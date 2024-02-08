@@ -12,7 +12,7 @@ section.admin div.AdminGroupElements table td.AdminGroupElement p { font-size: s
 
 div.options-links { text-align: right; padding: 0; margin: -2em 1em 0 0; }
 div.options-links span.options-item { text-align: center; margin: 1em; font-size: small; }
-div.options-links span.options-item img { margin: 0 5px; }
+div.options-links span.options-item i.fas { margin: 0 7px; }
 
 section.admin div.container table.table { font-size: small; }
 section.admin div.container table.table td.TableHeadingBar { font-size: large; }
@@ -36,5 +36,5 @@ section.admin div.container table.table-bordered span.gallery_item { margin: 1em
 section.admin div.container table.table-bordered span.gallery_item img { max-width: 200px; max-height: 200px; padding: 1px; border: 1px solid #ccc; }
 
 div.card td { vertical-align: top; }
-div.card td.ViewKey { width: 20%; }
-div.card td.ViewData { width: 80%; }
+div.card td.ViewKey { width: 25%; }
+div.card td.ViewData { width: 75%; }

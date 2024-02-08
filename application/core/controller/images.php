@@ -41,22 +41,22 @@ class Images_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=add',
 					'caption' => 'Nowe obrazki',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=gallery',
 					'caption' => 'Podgląd galerii',
-					'icon' => 'img/link.png',
+					'icon' => 'fas fa-images',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=load',
 					'caption' => 'Przegląd obrazków',
-					'icon' => 'img/picture.png',
+					'icon' => 'fas fa-camera',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -123,7 +123,7 @@ class Images_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -204,27 +204,27 @@ class Images_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=preview&id='.$id,
 						'caption' => 'Podgląd obrazka',
-						'icon' => 'img/image_size.png',
+						'icon' => 'fas fa-camera',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 						'caption' => 'Szczegóły obrazka',
-						'icon' => 'img/info.png',
+						'icon' => 'fas fa-info-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=download&id='.$id,
 						'caption' => 'Pobierz obrazek',
-						'icon' => 'img/save.png',
+						'icon' => 'fas fa-cloud-download-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń obrazek',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -289,27 +289,27 @@ class Images_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=preview&id='.$id,
 						'caption' => 'Podgląd obrazka',
-						'icon' => 'img/image_size.png',
+						'icon' => 'fas fa-camera',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 						'caption' => 'Edytuj obrazek',
-						'icon' => 'img/edit.png',
+						'icon' => 'fas fa-edit',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=download&id='.$id,
 						'caption' => 'Pobierz obrazek',
-						'icon' => 'img/save.png',
+						'icon' => 'fas fa-cloud-download-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 						'caption' => 'Usuń obrazek',
-						'icon' => 'img/trash.png',
+						'icon' => 'fas fa-trash-alt',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME,
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
@@ -336,27 +336,27 @@ class Images_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=view&id='.$id,
 					'caption' => 'Szczegóły obrazka',
-					'icon' => 'img/info.png',
+					'icon' => 'fas fa-info-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=edit&id='.$id,
 					'caption' => 'Edytuj obrazek',
-					'icon' => 'img/edit.png',
+					'icon' => 'fas fa-edit',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=download&id='.$id,
 					'caption' => 'Pobierz obrazek',
-					'icon' => 'img/save.png',
+					'icon' => 'fas fa-cloud-download-alt',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=delete&id='.$id,
 					'caption' => 'Usuń obrazek',
-					'icon' => 'img/trash.png',
+					'icon' => 'fas fa-trash-alt',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -380,17 +380,17 @@ class Images_Controller extends Controller
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zarządzanie galerią',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=gallery',
 					'caption' => 'Podgląd galerii',
-					'icon' => 'img/link.png',
+					'icon' => 'fas fa-images',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 
@@ -432,22 +432,22 @@ class Images_Controller extends Controller
 				array(
 					'link' => $last_url,
 					'caption' => 'Wróć do edycji',
-					'icon' => 'img/edit.png',
+					'icon' => 'fas fa-edit',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME,
 					'caption' => 'Zarządzanie galerią',
-					'icon' => 'img/files.png',
+					'icon' => 'fas fa-plus-circle',
 				),
 				array(
 					'link' => 'index.php?route='.MODULE_NAME.'&action=load',
 					'caption' => 'Przegląd obrazków',
-					'icon' => 'img/picture.png',
+					'icon' => 'fas fa-camera',
 				),
 				array(
 					'link' => 'index.php?route=admin',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 

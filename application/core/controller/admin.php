@@ -20,12 +20,12 @@ class Admin_Controller extends Controller
 				array(
 					'link' => 'index.php?route=logout',
 					'caption' => 'Wyloguj',
-					'icon' => 'img/logout.png',
+					'icon' => 'fas fa-sign-out-alt',
 				),
 				array(
 					'link' => 'index.php',
 					'caption' => 'Zamknij',
-					'icon' => 'img/stop.png',
+					'icon' => 'fas fa-times-circle',
 				),
 			);
 

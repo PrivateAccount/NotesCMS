@@ -137,7 +137,7 @@ class Controller
 			array(
 				'link' => 'index.php?route='.MODULE_NAME,
 				'caption' => 'Zamknij',
-				'icon' => 'img/stop.png',
+				'icon' => 'fas fa-times-circle',
 			),
 		);
 
@@ -162,7 +162,7 @@ class Controller
 			array(
 				'link' => 'index.php?route='.MODULE_NAME,
 				'caption' => 'Zamknij',
-				'icon' => 'img/stop.png',
+				'icon' => 'fas fa-times-circle',
 			),
 		);
 
@@ -187,7 +187,7 @@ class Controller
 			array(
 				'link' => 'index.php?route='.MODULE_NAME,
 				'caption' => 'Zamknij',
-				'icon' => 'img/stop.png',
+				'icon' => 'fas fa-times-circle',
 			),
 		);
 

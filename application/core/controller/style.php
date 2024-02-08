@@ -84,32 +84,32 @@ class Style_Controller extends Controller
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=0',
 						'caption' => 'Index',
-						'icon' => 'img/home.png',
+						'icon' => 'fas fa-home',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=1',
 						'caption' => 'Domyślny',
-						'icon' => 'img/checked.png',
+						'icon' => 'fas fa-check-circle',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=2',
 						'caption' => 'Rozszerzony',
-						'icon' => 'img/archive.png',
+						'icon' => 'fas fa-file-archive',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&mode=3',
 						'caption' => 'Administracyjny',
-						'icon' => 'img/control_panel.png',
+						'icon' => 'fas fa-tools',
 					),
 					array(
 						'link' => 'index.php?route='.MODULE_NAME.'&action=reset',
 						'caption' => 'Resetuj',
-						'icon' => 'img/files.png',
+						'icon' => 'fas fa-power-off',
 					),
 					array(
 						'link' => 'index.php?route=admin',
 						'caption' => 'Zamknij',
-						'icon' => 'img/stop.png',
+						'icon' => 'fas fa-times-circle',
 					),
 				);
 
