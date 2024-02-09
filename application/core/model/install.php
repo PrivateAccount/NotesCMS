@@ -45,9 +45,16 @@ class Install_Model extends Model
 								$statement->bindValue(':email_report_address', $record['email_report_address'], PDO::PARAM_STR); 
 								$statement->bindValue(':save_time', $record['save_time'], PDO::PARAM_STR); 
 							}
+							if (strstr($query, 'INSERT INTO `categories`'))
+							{
+								$statement->bindValue(':save_time', $record['save_time'], PDO::PARAM_STR); 
+							}
+							if (strstr($query, 'INSERT INTO `images`'))
+							{
+								$statement->bindValue(':save_time', $record['save_time'], PDO::PARAM_STR); 
+							}
 							if (strstr($query, 'INSERT INTO `pages`'))
 							{
-								$statement->bindValue(':main_description', $record['main_description'], PDO::PARAM_STR); 
 								$statement->bindValue(':save_time', $record['save_time'], PDO::PARAM_STR); 
 							}
 							if (strstr($query, 'INSERT INTO `users`'))
