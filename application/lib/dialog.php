@@ -28,23 +28,23 @@ class Dialog
 		switch ($this->dlg_type)
 		{
 			case MSG_ERROR:
-				$icon_name = 'msg_error.png';
+				$icon_name = 'fas fa-times-circle';
 				$alert_type = 'danger';
 				break;
 			case MSG_WARNING:
-				$icon_name = 'msg_warning.png';
+				$icon_name = 'fas fa-exclamation-circle';
 				$alert_type = 'warning';
 				break;
 			case MSG_INFORMATION:
-				$icon_name = 'msg_information.png';
+				$icon_name = 'fas fa-info-circle';
 				$alert_type = 'info';
 				break;
 			case MSG_QUESTION:
-				$icon_name = 'msg_question.png';
+				$icon_name = 'fas fa-question-circle';
 				$alert_type = 'success';
 				break;
 			default:
-				$icon_name = 'on_off.png';
+				$icon_name = 'fas fa-check-circle';
 				$alert_type = 'default';
 				break;
 		}
@@ -63,7 +63,7 @@ class Dialog
 		$main_dialog_body .= '<table>';
 		$main_dialog_body .= '<tr>';
 		$main_dialog_body .= '<td class="MsgIcon">';
-		$main_dialog_body .= '<img src="img/msg/'. $icon_name .'" alt="'. $this->dlg_title .'" />';
+		$main_dialog_body .= '<i class="'. $icon_name .'"></i>';
 		$main_dialog_body .= '</td>';
 		$main_dialog_body .= '<td class="MsgMessage">';
 		$main_dialog_body .= $this->dlg_text;

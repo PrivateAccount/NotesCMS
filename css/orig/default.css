@@ -52,7 +52,7 @@ div.form-group textarea { width: 100%; min-width: 100%; max-width: 100%; min-hei
 div.form-group select { width: 100%; padding: 2px; border: 1px solid #999; }
 
 div.message-bar { max-width: 800px; margin-left: auto; margin-right: auto; margin-top: 2em; }
-td.MsgIcon { vertical-align: top; }
+td.MsgIcon { vertical-align: top; font-size: 3em; }
 td.MsgMessage { text-align: left; padding: 0 0 1em 2em; }
 
 div.alert { margin: 1em 0 0 0; border-radius: 4px; padding: 1em; font-size: smaller; text-align: center; }
