@@ -266,7 +266,7 @@ class Sites_View extends View
 					if ($key == 'id') $id = $value;
 					if ($key == 'modified') $modified = $value;
 				}
-				$form_items[] = array('id' => $id, 'label' => $modified, 'value' => $id, 'button' => '<a href="index.php?route=sites&action=preview&id='.$id.'" class="btn btn-success btn-xs" style="margin-left: 2em;">Podgląd</a>');
+				$form_items[] = array('id' => $id, 'label' => $modified, 'value' => $id, 'button' => ' &nbsp; <a href="index.php?route=sites&action=preview&id='.$id.'" class="btn btn-success btn-xs" style="margin-left: 2em;">Podgląd</a>');
 			}
 		}
 

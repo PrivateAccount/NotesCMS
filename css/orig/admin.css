@@ -38,3 +38,8 @@ section.admin div.container table.table-bordered span.gallery_item img { max-wid
 div.card td { vertical-align: top; }
 div.card td.ViewKey { width: 25%; }
 div.card td.ViewData { width: 75%; }
+
+td.FormSearchBar span.FormSearchCaption { margin: 0 5px; }
+td.FormSearchBar span.FormSearchValue { color: #c00; }
+td.FormSearchBar span.FormSearchClose { margin: 0 1em; font-size: 1.25em; }
+td.FormSearchBar span.FormSearchClose i:hover { cursor: pointer; }

@@ -68,7 +68,7 @@ class TilesBuilder extends Builder
 			$main_text .= '<span class="FormSearchValue">" <b>' . $_SESSION['list_filter'] . '</b> "</span>';
 			$main_text .= '<span class="FormSearchClose">';
 			$main_text .= '<input type="hidden" name="ListSearchClose" value="Close" />';
-			$main_text .= '<img src="img/16x16/cross_button.png" onclick="document.getElementById(\'form_search_close\').submit();" alt="close" title="Usuń filtr" />';
+			$main_text .= '<i class="fas fa-times-circle" onclick="document.getElementById(\'form_search_close\').submit();" title="Usuń filtr"></i>';
 			$main_text .= '</span>'; 
 			$main_text .= '</form>';
 			$main_text .= '</td>';
