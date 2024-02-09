@@ -247,6 +247,12 @@ class Roles_Controller extends Controller
 
 			$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
+			if ($this->app->get_user()->super_admin() && $id == 1) // konto superadmina - nie usuwamy
+			{
+				parent::AccessDenied();
+				return;
+			}
+
 			if (isset($_GET['confirm']))
 			{
 				$result = $this->app->get_model_object()->Delete($id);

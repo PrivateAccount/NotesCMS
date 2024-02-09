@@ -247,13 +247,10 @@ class Users_Controller extends Controller
 
 			$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-			if ($this->app->get_user()->super_admin() == FALSE) // jeśli nie super-admin
+			if ($this->app->get_user()->super_admin() && $id == 1) // konto superadmina - nie usuwamy
 			{
-				if ($id == 1) // konto superadmina - nie usuwamy
-				{
-					parent::AccessDenied();
-					return;
-				}
+				parent::AccessDenied();
+				return;
 			}
 
 			if (isset($_GET['confirm']))
