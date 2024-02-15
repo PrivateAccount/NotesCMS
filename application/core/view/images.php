@@ -17,11 +17,11 @@ class Images_View extends View
 			array('width' => '10%', 'align' => 'center', 'visible' => '1', 'image' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
-			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '10%', 'align' => 'right',  'visible' => '1'),
+			array('width' => '10%', 'align' => 'right',  'visible' => '1'),
+			array('width' => '10%', 'align' => 'right',  'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '15%', 'align' => 'center', 'visible' => '1'),
 		);
 		

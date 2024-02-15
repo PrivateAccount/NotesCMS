@@ -13,15 +13,15 @@ class Pages_View extends View
 		$image = 'far fa-file-word';
 
 		$attribs = array(
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '8%',  'align' => 'center', 'visible' => '0'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
 			array('width' => '10%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '25%', 'align' => 'left',   'visible' => '0'),
-			array('width' => '35%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
+			array('width' => '25%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '5%',  'align' => 'right',  'visible' => '1'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '0'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '15%', 'align' => 'center', 'visible' => '1'),

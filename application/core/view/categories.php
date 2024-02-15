@@ -14,18 +14,18 @@ class Categories_View extends View
 
 		$attribs = array(
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '8%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '10%', 'align' => 'left',   'visible' => '0'),
 			array('width' => '10%', 'align' => 'left',   'visible' => '0'),
 			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
-			array('width' => '15%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 		);
 		
 		$actions = array(

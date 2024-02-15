@@ -13,11 +13,11 @@ class Visitors_View extends View
 		$image = 'fas fa-globe-americas';
 
 		$attribs = array(
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '35%', 'align' => 'left',   'visible' => '1', 'array' => '1'),
-			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1', 'array' => '1'),
+			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '35%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 		);
 		

@@ -15,12 +15,12 @@ class Messages_View extends View
 		$attribs = array(
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
+			array('width' => '15%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '20%', 'align' => 'left',   'visible' => '1'),
-			array('width' => '25%', 'align' => 'left',   'visible' => '1'),
 			array('width' => '0%',  'align' => 'left',   'visible' => '0', 'custom' => TRUE),
 			array('width' => '5%',  'align' => 'center', 'visible' => '0'),
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
-			array('width' => '5%',  'align' => 'center', 'visible' => '1'),
+			array('width' => '15%', 'align' => 'center', 'visible' => '1'),
+			array('width' => '15%', 'align' => 'center', 'visible' => '1'),
 			array('width' => '10%', 'align' => 'center', 'visible' => '1'),
 		);
 		
