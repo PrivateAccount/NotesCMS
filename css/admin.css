@@ -23,13 +23,13 @@ section.admin div.container table.table td.ActionCell i.fas { font-size: larger;
 section.admin div.container table.table td.PaginatorCell { border-top: 1px solid #ccc; padding: 1em; }
 section.admin div.container table.table td.PaginatorCell div.counters { font-size: small; }
 section.admin div.container table.table td.PaginatorCell div.pages ul.pagination { display: inline-block; padding: 0; }
-section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item { display: inline; margin: 2px 1px; padding: 2px 20px; border: 1px solid #999; border-radius: 5px; font-size: larger; }
+section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item { display: inline; margin: 2px 1px; padding: 2px 20px; border: 1px solid #999; border-radius: 5px; font-size: small; }
 section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item.active { background-color: #fed; }
 section.admin div.container table.table td.PaginatorCell div.pages ul.pagination li.page-item.disabled { background-color: #eee; }
 section.admin div.container table.table td.PaginatorCell div.band { display: inline-block; }
 section.admin div.container table.table td.PaginatorCell div.skip { display: inline-block; }
 
-section.admin div.container table.table-bordered { width: 1400px; margin-left: auto; margin-right: auto; }
+section.admin div.container table.table-bordered { width: 100%; margin-left: auto; margin-right: auto; }
 section.admin div.container table.table-bordered tr td { padding: 5px 0; vertical-align: top; }
 section.admin div.container table.table-bordered td img.ListImage { width: 100px; height: auto; }
 section.admin div.container table.table-bordered span.gallery_item { margin: 1em; }
