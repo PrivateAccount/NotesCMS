@@ -71,7 +71,7 @@ class Notes_Controller extends Controller
 			if (!empty($_POST))
 			{
 				$record = array(
-					'title' => $_POST['title'],
+					'title' => strip_tags($_POST['title']),
 					'contents' => $_POST['contents'],
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
@@ -135,7 +135,7 @@ class Notes_Controller extends Controller
 			if (!empty($_POST))
 			{
 				$record = array(
-					'title' => $_POST['title'],
+					'title' => strip_tags($_POST['title']),
 					'contents' => $_POST['contents'],
 					'author_id' => $this->app->get_user()->get_value('user_id'),
 					'modified' => date("Y-m-d H:i:s"),
