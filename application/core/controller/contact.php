@@ -32,9 +32,9 @@ class Contact_Controller extends Controller
 		parent::Add_Action();
 
 		$record = array(
-			'login' => isset($_POST['login']) ? $_POST['login'] : NULL,
-			'email' => isset($_POST['email']) ? $_POST['email'] : NULL,
-			'contents' => isset($_POST['contents']) ? $_POST['contents'] : NULL,
+			'login' => isset($_POST['login']) ? strip_tags($_POST['login']) : NULL,
+			'email' => isset($_POST['email']) ? strip_tags($_POST['email']) : NULL,
+			'contents' => isset($_POST['contents']) ? strip_tags($_POST['contents']) : NULL,
 		);
 
 		$message_options = array(
