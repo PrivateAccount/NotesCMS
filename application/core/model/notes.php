@@ -98,7 +98,7 @@ class Notes_Model extends Model
 			$statement->execute();
 			
 			$this->row_item = $statement->fetch(PDO::FETCH_ASSOC);
-			$result = intval($this->row_item['id']);
+			$result = $this->row_item['id'] > 0 ? intval($this->row_item['id']) : $id;
 		}
 		catch (PDOException $e)
 		{
@@ -130,7 +130,7 @@ class Notes_Model extends Model
 			$statement->execute();
 			
 			$this->row_item = $statement->fetch(PDO::FETCH_ASSOC);
-			$result = intval($this->row_item['id']);
+			$result = $this->row_item['id'] > 0 ? intval($this->row_item['id']) : $id;
 		}
 		catch (PDOException $e)
 		{
