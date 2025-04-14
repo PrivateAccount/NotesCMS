@@ -90,12 +90,12 @@ class Model
 
 		foreach ($record as $key => $value)
 		{
-			$_SESSION['form_fields'][$key] = $value;
+			$_SESSION['form_fields'][$key] = trim($value);
 		}
 
 		foreach ($this->required as $key => $value) 
 		{
-			if (!strlen(strval($record[$value])))
+			if (!strlen(strval(trim($record[$value]))))
 			{
 				$this->failed[] = $value;
 				$result = FALSE;
