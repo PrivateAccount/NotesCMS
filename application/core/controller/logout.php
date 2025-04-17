@@ -12,16 +12,17 @@ class Logout_Controller extends Controller
 		if ($this->app->get_user()->get_value('user_status')) // zalogowany
 		{
 			$id = $this->app->get_user()->get_value('user_id');
-
 			$this->app->get_model_object()->SaveLogout($id);
-				
-			unset($_SESSION['user_id']);
-			unset($_SESSION['user_status']);
-			unset($_SESSION['user_login']);
-			unset($_SESSION['user_name']);
-			unset($_SESSION['user_surname']);
-			unset($_SESSION['user_email']);
 			
+			$_SESSION = array(); // Clear all session data
+			
+			// Delete session cookie
+			if (isset($_COOKIE[session_name()])) 
+			{
+				setcookie(session_name(), '', time() - 3600, '/');
+			}
+			
+			// Destroy session
 			session_destroy();
 
 			$this->app->get_page()->set_message(MSG_INFORMATION, 'Zostałeś pomyślnie wylogowany z serwisu.');
